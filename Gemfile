@@ -15,6 +15,9 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
+# Prettier Links
+gem 'friendly_id', '~> 5.1.0'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -51,3 +54,11 @@ gem 'devise'
 gem 'purecss'
 gem 'pg'
 gem 'thin'
+
+#testing
+
+gem 'rspec'
+gem 'capybara'
+gem 'factory_girl_rails'
+gem 'faker'
+gem 'will_paginate'

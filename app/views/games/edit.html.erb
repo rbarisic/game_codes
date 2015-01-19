@@ -1,0 +1,8 @@
+<h1 class="text-center">Edit Game</h1>
+<div class="pure-layout pure-layout-960">
+		<%= form_for @game do |f| %>
+			<%= f.label :name %>
+			<%= f.text_field :name %>
+		<% end %>
+	<%= link_to 'Go Back', :back, class: 'pure-button' %>
+</div>

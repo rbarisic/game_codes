@@ -1,0 +1,56 @@
+.pure-button {
+	color: #333 !important;
+}
+
+.pure-menu ul {
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.pure-menu ul li a:hover {
+	color: #fff;
+	background: #3F5371;
+}
+
+.pure-menu-selected a {
+	color: #fff !important;
+	background: #29313E !important;
+}
+
+.l-box {
+	padding: 1em;
+}
+
+.l-box-window {
+	margin: 1em;
+	border: 1px solid #eee;
+}
+
+.l-box-window table {
+	width: 100%;
+}
+
+.l-box-window hr {
+	border: none;
+	outline: none;
+	border-top: 1px solid #ddd;
+}
+
+.pure-layout {
+}
+
+.pure-layout-header {
+	margin: 0;
+	padding: 1em;
+	color: white;
+	background: #29313E;
+}
+
+@media screen and (min-width: 64em) {
+
+	.pure-layout-960 {
+
+		width: 960px;
+		margin: 0 auto;
+	}
+}

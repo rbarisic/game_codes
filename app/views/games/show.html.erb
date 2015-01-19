@@ -1,0 +1,8 @@
+<h1><%= @game.name %></h1>
+<div class="pure-layout pure-layout-960">
+	<% if user_signed_in? && current_user.admin? %>
+		<%= link_to 'Edit', edit_game_path(@game), class: 'pure-button' %>
+	<% end %>
+
+	<%= link_to 'Go Back', games_path, class: 'pure-button' %>
+</div>

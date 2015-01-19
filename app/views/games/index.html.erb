@@ -1,0 +1,9 @@
+<h1 class="text-center">All Games</h1>
+
+<div class="pure-layout pure-layout-960">
+	<ul>
+	<% @games.each do |game| %>
+		<li><%= link_to game.name, game %></li>
+	<% end %>
+	</ul>
+</div>
