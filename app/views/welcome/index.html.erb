@@ -34,6 +34,11 @@
 			<div class="l-box l-box-window">
 				Top 5 Contributors
 				<hr>
+				<ul>
+				<% User.last(5).each do |user| %>
+					<li><%= link_to user.nickname || user.email, user %></li>
+				<% end %>
+				</ul>
 			</div>
 		</div>
 

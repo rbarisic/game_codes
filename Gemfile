@@ -39,7 +39,7 @@ end
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
@@ -53,7 +53,7 @@ gem "font-awesome-rails"
 gem 'devise'
 gem 'purecss'
 gem 'pg'
-gem 'thin'
+#gem 'thin'
 
 #testing
 

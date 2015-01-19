@@ -3,16 +3,17 @@ body {
 }
 
 a {
-	font-weight: 500;
 	color: #6A8CBE;
 	text-decoration: none;
 }
 
 a:hover {
 	color: #A8CBFF;
-	text-decoration: underline;
 }
 
+a:visited {
+	color: #3F5371;
+}
 
 .text-heading {
 }

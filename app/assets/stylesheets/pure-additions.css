@@ -46,6 +46,14 @@
 	background: #29313E;
 }
 
+.pure-list-striped li {
+	padding: 0.2em;
+}
+
+.pure-list-striped li:nth-child(2n) {
+	background: #eee;
+}
+
 @media screen and (min-width: 64em) {
 
 	.pure-layout-960 {

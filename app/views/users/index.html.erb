@@ -1,7 +1,8 @@
 <h1>All Users</h1>
 
+<ul class="pure-list-striped gc-user-list">
 <% @users.each do |user| %>
-	<%= link_to user.nickname, user %>
+	<li><%= link_to user.nickname, user %></li>
 <% end %>
-
+</ul>
 <%= will_paginate @users %>
