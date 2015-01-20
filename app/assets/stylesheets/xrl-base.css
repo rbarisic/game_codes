@@ -60,6 +60,14 @@ div.window {
 	padding: 1em;
 }
 
+ul.nolist {
+	list-style: none;
+	padding: 0;
+}
+
+ul.nolist li {
+	line-height: 1.5;
+}
 
 div.window.distanced {
 	margin: 1em;
@@ -67,4 +75,8 @@ div.window.distanced {
 
 .window div.content.nopadding {
 	padding: 0 !important;
+}
+
+.window-controls {
+	margin-top: 1em;
 }

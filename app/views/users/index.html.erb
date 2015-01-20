@@ -1,8 +1,13 @@
-<h1>All Users</h1>
+<div class="pure-layout pure-layout-960">
 
-<ul class="pure-list-striped gc-user-list">
-<% @users.each do |user| %>
-	<li><%= link_to user.nickname, user %></li>
-<% end %>
-</ul>
-<%= will_paginate @users %>
+	<div class="text-center">
+		<h1>All Users</h1>
+	</div>
+
+	<ul class="pure-list-striped gc-user-list">
+	<% @users.each do |user| %>
+		<li><%= link_to user.nickname, user %></li>
+	<% end %>
+	</ul>
+	<%= will_paginate @users %>
+</div>

@@ -2,6 +2,22 @@
 	color: #333 !important;
 }
 
+.pure-u-1 {
+
+}
+
+.pure-resizable {
+	transition: width 0.5s;
+}
+
+.pure-img-x {
+	width: 100%;
+}
+
+.noborder {
+	border: none !important;
+}
+
 .pure-menu ul {
 	margin-bottom: 0 !important;
 	padding-bottom: 0 !important;
@@ -42,6 +58,15 @@
 .pure-layout {
 }
 
+.pure-layout-960 {
+	margin: 2em auto;
+}
+
+.pure-layout-fullwidth {
+	margin-top: 2em;
+	width: 100%;
+}
+
 .pure-layout-window {
 	border: 4px solid #eee;
 	border-radius: 4px;
@@ -75,6 +100,5 @@
 	.pure-layout-960 {
 
 		width: 960px;
-		margin: 2em auto;
 	}
 }

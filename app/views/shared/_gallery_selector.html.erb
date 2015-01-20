@@ -1,0 +1,51 @@
+<script>
+
+	// Set the initial amount of horizontal tiles
+	var gallerySize = 3;
+
+	// Toggle the gallery between 2 values
+	function toggleGallery(first, second) {
+	}
+
+	// Lessen the tile size. var size = gallerySize
+	function enlargeGallery(size) {
+
+		list = document.getElementsByName('resizable'); // select all resizable elements
+
+			switch(size) {
+				case 2: newClass = 'pure-u-1 pure-u-md-1 pure-u-lg-1-2 pure-resizable'; nextSize = 1; break;
+				case 3: newClass = 'pure-u-1 pure-u-md-1-2 pure-resizable'; nextSize = 2; break;
+				case 4: newClass = 'pure-u-1 pure-u-md-1-3 pure-resizable'; nextSize = 3; break;
+			}
+
+		for( i = 0; i < list.length; i++ ) {
+			list.item(i).className = newClass;
+		}
+
+		// Modify gallerySize-variable
+		return nextSize;
+	}
+
+	// Enlarge the tile size. var size = gallerySize
+	function reduceGallery(size) {
+
+		list = document.getElementsByName('resizable'); // select all resizable elements
+
+			switch(size) {
+				case 1: newClass = 'pure-u-1 pure-u-md-1-2 pure-resizable'; nextSize = 2; break;
+				case 2: newClass = 'pure-u-1 pure-u-md-1-3 pure-resizable'; nextSize = 3; break;
+				case 3: newClass = 'pure-u-1 pure-u-md-1-4 pure-resizable'; nextSize = 4; break;
+			}
+
+		for( i = 0; i < list.length; i++ ) {
+			list.item(i).className = newClass;
+		}
+
+		// Modify gallerySize-variable
+		return nextSize;
+	}
+
+</script>
+
+<button onclick="gallerySize = reduceGallery(gallerySize)"><i class="fa fa-minus-square"></i></button>
+<button onclick="gallerySize = enlargeGallery(gallerySize)"><i class="fa fa-plus-square"></i></button>

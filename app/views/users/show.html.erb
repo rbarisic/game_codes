@@ -1,12 +1,24 @@
-<h1><%= @user.nickname %></h1>
-	<% if @user.game_codes.any? %>
-		Codes uploaded: <%= @user.game_codes.all%>
-	<% else %>
-		<% if @user == current_user %>
-		You haven't added any codes yet.
+<div class="pure-layout pure-layout-960 pure-layout-window">
+	<div class="l-box">
+
+		<h1><%= @user.nickname %></h1>
+		<% if @user.game_codes.any? %>
+			Codes uploaded: <%= @user.game_codes.all%>
 		<% else %>
-			<%= @user.nickname %> hasn't added any codes yet.
+			<% if @user == current_user %>
+			You haven't added any codes yet.
+			<%= link_to 'Add' %> some.
+			<% else %>
+				<%= @user.nickname %> hasn't added any codes yet.
+			<% end %>
 		<% end %>
-		<%= link_to 'Add' %> some.
-	<% end %>
-<%= link_to 'go back', :back %>
+
+		<div class="window-controls" id="user-controls">
+			<% if user_signed_in? && current_user.admin? %>
+				<%= link_to 'Edit', edit_user_path(@user), class: 'pure-button' %>
+			<% end %>
+
+			<%= link_to 'Go Back', users_path, class: 'pure-button' %>
+		</div>
+	</div>
+</div>

@@ -3,12 +3,18 @@
 		<h1><%= @game.name %></h1>
 		<div class="pure-g">
 			<div class="pure-u-1">
-				<div class="l-box l-box-window">
-
+				<div class="window">
+					<div class="content">
+						<ul class="nolist">
+						<li>Creator / Copyright: <b><%= @game.creator %></b></li>
+						<li>Company Website: <%= @game.company_url || 'not known' %></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div id="game-controls">
+
+		<div class="window-controls" id="game-controls">
 			<% if user_signed_in? && current_user.admin? %>
 				<%= link_to 'Edit', edit_game_path(@game), class: 'pure-button' %>
 			<% end %>

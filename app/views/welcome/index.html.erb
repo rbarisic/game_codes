@@ -32,23 +32,23 @@
 
 		<div class="pure-u-1 pure-u-md-1-2">
 			<div class="window distanced">
-				<div class="heading">Our Sponsor</div>
+				<div class="heading">Advertisement</div>
 				<div class="content">
-
+					<%= image_tag 'default-advertisement.jpg', class: 'pure-img' %>
 				</div>
 			</div>
 		</div>
 
 		<div class="pure-u-1 pure-u-md-1-2">
 			<div class="window distanced">
-				<div class="heading">Top 5 Contributors</div>
+				<div class="heading">Top 10 Contributors</div>
 				<div class="content">
 					<table class="pure-table-full pure-table-striped">
 						<tr>
 							<th>User</th>
 							<th>Codes submitted</th>
 						</tr>
-						<% User.last(5).each do |user| %>
+						<% User.last(10).each do |user| %>
 							<tr>
 							<td align="left">
 								<%= link_to user do %>
@@ -66,9 +66,9 @@
 
 		<div class="pure-u-1 pure-u-md-1-2">
 			<div class="window distanced">
-				<div class="heading">Our Sponsor</div>
+				<div class="heading">Advertisement</div>
 				<div class="content">
-
+					<%= image_tag 'default-advertisement.jpg', class: 'pure-img' %>
 				</div>
 			</div>
 		</div>
