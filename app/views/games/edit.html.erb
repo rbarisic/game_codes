@@ -1,8 +1,20 @@
+<% if @game.errors.any? %>
+	<ul>
+	<% @game.errors.full_messages.each do |error| %>
+		<li><%= error %></li>
+	<% end %>
+	</ul>
+<% end %> 
+
 <h1 class="text-center">Edit Game</h1>
 <div class="pure-layout pure-layout-960">
 		<%= form_for @game do |f| %>
 			<%= f.label :name %>
 			<%= f.text_field :name %>
+			<%= f.label :creator %>
+			<%= f.text_field :creator %>
+
+			<%= f.submit %>
 		<% end %>
 	<%= link_to 'Go Back', :back, class: 'pure-button' %>
 </div>

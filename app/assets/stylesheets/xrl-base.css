@@ -3,16 +3,12 @@ body {
 }
 
 a {
-	color: #6A8CBE;
+	color: #3F5371;
 	text-decoration: none;
 }
 
 a:hover {
 	color: #A8CBFF;
-}
-
-a:visited {
-	color: #3F5371;
 }
 
 .text-heading {
@@ -26,10 +22,49 @@ h1.text-heading {
 	text-align: center;
 }
 
+.text.center {
+	text-align: center;
+}
+
+.text.left {
+	text-align: left;
+}
+
+.text.right {
+	text-align: right;
+}
+
 .pull-right {
 	text-align: right;
 }
 
 .pull-left {
 	text-align: left;
+}
+
+div.window {
+	border: 1px solid #eee;
+}
+
+.div.window {
+}
+
+.window div.heading {
+	display: block;
+	color: #fff;
+	background: #29313E;
+	padding: 0.8em 1em;
+}
+
+.window div.content {
+	padding: 1em;
+}
+
+
+div.window.distanced {
+	margin: 1em;
+}
+
+.window div.content.nopadding {
+	padding: 0 !important;
 }

@@ -1,3 +1,12 @@
 <h1><%= @user.nickname %></h1>
-
+	<% if @user.game_codes.any? %>
+		Codes uploaded: <%= @user.game_codes.all%>
+	<% else %>
+		<% if @user == current_user %>
+		You haven't added any codes yet.
+		<% else %>
+			<%= @user.nickname %> hasn't added any codes yet.
+		<% end %>
+		<%= link_to 'Add' %> some.
+	<% end %>
 <%= link_to 'go back', :back %>

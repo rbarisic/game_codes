@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150119142502) do
+ActiveRecord::Schema.define(version: 20150120105748) do
+
+  create_table "game_codes", force: true do |t|
+    t.string   "code"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "game_codes", ["code"], name: "index_game_codes_on_code", unique: true
+  add_index "game_codes", ["user_id"], name: "index_game_codes_on_user_id"
 
   create_table "games", force: true do |t|
     t.string   "name"
@@ -19,6 +29,8 @@ ActiveRecord::Schema.define(version: 20150119142502) do
     t.datetime "updated_at"
     t.string   "slug"
     t.integer  "game_codes_id"
+    t.string   "creator"
+    t.string   "cover_url"
   end
 
   add_index "games", ["game_codes_id"], name: "index_games_on_game_codes_id"
@@ -39,9 +51,11 @@ ActiveRecord::Schema.define(version: 20150119142502) do
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
     t.string   "admin",                  default: "f"
+    t.integer  "game_code_id"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["game_code_id"], name: "index_users_on_game_code_id"
   add_index "users", ["nickname"], name: "index_users_on_nickname"
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
