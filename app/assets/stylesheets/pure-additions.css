@@ -1,9 +1,27 @@
+.p-a { }
+
+.p-a-bg-1 { transition: background 1s; }
+
+.p-a-1 { transition: all 1s; }
+
+.p-a-0-2 { transition: all 0.2s; }
+
+.p-a-0-5 { transition: all 0.5s; }
+
 .pure-button {
-	color: #333 !important;
+	color: #333;
 }
 
-.pure-u-1 {
+.pure-button:hover {
+	color: #222;
+}
 
+.pure-button-primary {
+	color: #eee;
+}
+
+.pure-button-primary:hover {
+	color: #fff;
 }
 
 .pure-resizable {
@@ -93,6 +111,67 @@
 
 .pure-list-striped li:nth-child(2n) {
 	background: #eee;
+}
+
+.pure-notification {
+	background-color: #fff;
+	color: #333;
+	padding: 1em;
+
+	overflow: hidden;
+}
+
+.pure-notification-collapsed {
+	color: #333;
+	padding: 0;
+	height: 4px;
+	overflow: hidden;
+}
+
+.pure-notification-collapsed span {
+	opacity: 0;
+}
+
+button.pure-notification-ribbon {
+	position: absolute;
+	right: 0;
+	color: #fff;
+	background: #ddd;
+	border: none;
+	border-radius: 4;
+}
+
+button.pure-notification-ribbon.warning {
+	color: #fff;
+	background-color: #B12C2F;
+}
+
+button.pure-notification-ribbon.hidden {
+	display: none;
+}
+
+.pure-notification.info {
+	background: #C2D8FE;
+}
+
+.pure-notification.warning {
+	color: #fff;
+	background: #B12C2F;
+}
+
+.pure-notification.error {
+	color: #7E212A;
+	background: #CB6D7B;
+}
+
+.pure-notification.success {
+	background: #E6FEA8;
+}
+
+.pure-notification button {
+	color: inherit;
+	background: none;
+	border: none;
 }
 
 @media screen and (min-width: 64em) {

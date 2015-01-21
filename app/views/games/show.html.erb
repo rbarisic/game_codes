@@ -7,8 +7,25 @@
 					<div class="content">
 						<ul class="nolist">
 						<li>Creator / Copyright: <b><%= @game.creator %></b></li>
-						<li>Company Website: <%= @game.company_url || 'not known' %></li>
+						<li>Company Website: <%= link_to @game.company_url, @game.company_url, rel: 'nofollow', target: '_blank' || 'not known' %></li>
 						</ul>
+					</div>
+					<div class="content">
+						<% if @game.game_codes.any? %>
+							All Codes for <%= @game.name %>:
+							<ul>
+								<% @game.game_codes.each do |code| %>
+									<li><%= code.code %> | submitted by <%= link_to code.user.nickname, code.user %></li>
+								<% end %>
+							</ul>
+						<% else %>
+							No Game Codes yet. Add one please.
+							<br><br>
+							<%= label 'Gamecode', 'Gamecode' %>:
+							<%= text_field 'hello', 'hell' %>
+							<br><br>
+							<%= submit_tag 'submit' %>
+						<% end %>
 					</div>
 				</div>
 			</div>

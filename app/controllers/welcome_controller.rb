@@ -2,6 +2,7 @@ class WelcomeController < ApplicationController
   before_action :set_splash, only: [:index]
 
   def index
+    @gamecode = GameCode.new
   end
 
   def help

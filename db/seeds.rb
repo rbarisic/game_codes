@@ -28,5 +28,7 @@ end
 # Create a few mock games
 games = "Swords of Master, Fight of Fist, Anger of Dark, Presence of Evil, Absence of Darkness, Master of Legacy".split(',')
 games.each do |game|
-	Game.create(name: game, creator: Faker::Company.name)
+	Game.create(name: game,
+				creator: Faker::Company.name,
+				company_url: 'http://www.' + Faker::Internet.domain_name)
 end

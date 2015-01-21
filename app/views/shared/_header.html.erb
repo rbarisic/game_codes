@@ -41,3 +41,10 @@
     </ul>
 </div>
 
+<% if user_signed_in? && current_user.admin %>
+    <% if cookies['adminWarning'] %>
+        <%= render 'shared/admin_warning' %>
+    <% else %>
+        <%= render 'shared/admin_warning_collapsed' %>
+    <% end %>
+<% end %>

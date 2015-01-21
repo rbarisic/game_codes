@@ -11,16 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150120124115) do
+ActiveRecord::Schema.define(version: 20150120151846) do
 
   create_table "game_codes", force: true do |t|
     t.string   "code"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "game_id"
   end
 
   add_index "game_codes", ["code"], name: "index_game_codes_on_code", unique: true
+  add_index "game_codes", ["game_id"], name: "index_game_codes_on_game_id"
   add_index "game_codes", ["user_id"], name: "index_game_codes_on_user_id"
 
   create_table "games", force: true do |t|

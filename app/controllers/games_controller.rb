@@ -1,11 +1,16 @@
 class GamesController < ApplicationController
 
 	def new
-
+		@game = Game.new
 	end
 
 	def create
-		redirect_to @game
+		@game = Game.new(game_params)
+		if @game.save
+			redirect_to @game
+		else
+			render :new
+		end
 	end
 
 	def index
@@ -14,6 +19,7 @@ class GamesController < ApplicationController
 
 	def show
 		@game = Game.friendly.find(params[:id])
+		@gamecodes = @game.game_codes
 	end
 
 	def edit
@@ -36,7 +42,6 @@ class GamesController < ApplicationController
 
 	private
 		def game_params
-	      params.require(:game).permit(:name, :creator)
+	      params.require(:game).permit(:name, :creator, :company_url, :cover_url)
 	    end
-end	
-
+end

@@ -4,15 +4,17 @@ GameCodes::Application.routes.draw do
 
   resources :users
 
-  resources :games do
-    resources :game_codes
-  end
+  resources :games
+
+  resources :game_codes
+
 
   root 'welcome#index'
   
   get "welcome/help"
   get "welcome/about"
   get "welcome/imprint"
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
