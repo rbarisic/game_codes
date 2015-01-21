@@ -36,6 +36,10 @@
 	border: none !important;
 }
 
+.pure-menu {
+	top: 0;
+}
+
 .pure-menu ul {
 	margin-bottom: 0 !important;
 	padding-bottom: 0 !important;

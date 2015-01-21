@@ -108,3 +108,22 @@ div.window.distanced {
 .clearfix {
 	clear: both;
 }
+
+.debug {
+	
+	color: #333;
+	background: #fff;
+	padding: 1em;
+	font-size: 12px;
+	width: 50%;
+	margin: 0 auto;
+
+	border-radius: 8px;
+	border: 1px solid #ccc;
+}
+
+.debug hr {
+	color: #ccc;
+	border: none;
+	border-top: 1px dashed #ccc;
+}
