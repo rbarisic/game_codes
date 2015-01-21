@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150120151846) do
+ActiveRecord::Schema.define(version: 20150121131902) do
 
   create_table "game_codes", force: true do |t|
     t.string   "code"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20150120151846) do
     t.string   "creator"
     t.string   "cover_url"
     t.string   "company_url"
+    t.integer  "code_length"
   end
 
   add_index "games", ["game_codes_id"], name: "index_games_on_game_codes_id"

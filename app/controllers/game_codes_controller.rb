@@ -10,7 +10,7 @@ class GameCodesController < ApplicationController
 		if @gamecode.save
 			redirect_to @gamecode.game
 		else
-			render :new
+			redirect_to root_path
 		end
 	end
 

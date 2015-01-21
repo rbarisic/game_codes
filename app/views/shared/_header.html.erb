@@ -42,7 +42,7 @@
         </ul>
     </div>
 
-    <% if user_signed_in? && current_user.admin %>
+    <% if user_signed_in? && current_user_is_admin %>
         <% if cookies['adminWarning'] %>
             <%= render 'shared/admin_warning' %>
         <% else %>
