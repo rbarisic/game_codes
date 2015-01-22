@@ -1,87 +1,35 @@
 <div class="pure-layout pure-layout-960">
 	<div class="pure-g">
 
-	<div class="pure-u-1">
-		<div class="window distanced">
-			
-			<div class="content">
-				<h1 class="text-center">Add your Code</h1>
-				<p class="text-center">Add your code to our Site and get new Allies instantly!</p>
-					<%= render 'game_codes/add_code_form' %>
-			</div>
-		</div>
-	</div>
-
-		<div class="pure-u-1 pure-u-md-1-2">
-			<div class="window distanced round">
-				<div class="heading">Newest Games</div>
+		<div class="pure-u-1">
+			<div class="window distanced">
+				
 				<div class="content">
-					<table class="pure-table-full pure-table-striped">
-						<tr>
-							<th align="left">
-								Game
-							</th>
-							<th align="right">
-								Date Added
-							</th>
-						</tr>
-						<% Game.last(5).each do |game| %>
-							<tr>
-								<td align="left">
-									<%= link_to game do %>
-										<%= fa_icon 'link' %>
-										<%= game.name %>
-									<% end %>
-								</td>
-								<td align="right"><%= time_ago_in_words(game.created_at) %></td>
-							</tr>
-						<% end %>
-					</table>
+					<h1 class="text-center">Add your Code</h1>
+					<p class="text-center">Add your code to our Site and get new Allies instantly!</p>
+						<%= render 'game_codes/add_code_form' %>
 				</div>
 			</div>
 		</div>
 
 		<div class="pure-u-1 pure-u-md-1-2">
-			<div class="window distanced round">
-				<div class="heading">Advertisement</div>
-				<div class="content">
-					<%= image_tag 'default-advertisement.jpg', class: 'pure-img' %>
-				</div>
-			</div>
+			<%= render 'widgets/newest_games' %>
 		</div>
 
 		<div class="pure-u-1 pure-u-md-1-2">
-			<div class="window distanced round">
-				<div class="heading">Top 10 Contributors</div>
-				<div class="content">
-					<table class="pure-table-full pure-table-striped">
-						<tr>
-							<th>User</th>
-							<th>Codes submitted</th>
-						</tr>
-						<% User.last(10).each do |user| %>
-							<tr>
-							<td align="left">
-								<%= link_to user do %>
-									<%= fa_icon 'user' %>
-									<%= user.nickname || user.email || 'Deleted User' %>
-								<% end %>
-							</td>
-							<td></td>
-							</tr>
-						<% end %>
-					</table>
-				</div>
-			</div>
+			<%= render 'widgets/advertisement' %>
 		</div>
 
 		<div class="pure-u-1 pure-u-md-1-2">
-			<div class="window distanced round">
-				<div class="heading">Advertisement</div>
-				<div class="content">
-					<%= image_tag 'default-advertisement.jpg', class: 'pure-img' %>
-				</div>
-			</div>
+			<%= render 'widgets/newest_users' %>
+		</div>
+
+		<div class="pure-u-1 pure-u-md-1-2">
+			<%= render 'widgets/top_users' %>
+		</div>
+
+		<div class="pure-u-1 pure-u-md-1-2">
+			<%= render 'widgets/advertisement' %>
 		</div>
 
 		<div class="pure-u-1 pure-u-md-1-2">
@@ -92,5 +40,6 @@
 				</div>
 			</div>
 		</div>
+		
 	</div>
 </div>

@@ -1,0 +1,28 @@
+<div class="window distanced round">
+	<div class="heading">
+		Newest Games
+	</div>
+	<div class="content">
+		<table class="pure-table-full pure-table-striped">
+			<tr>
+				<th align="left">
+					Game
+				</th>
+				<th align="right">
+					Date Added
+				</th>
+			</tr>
+			<% Game.last(5).each do |game| %>
+				<tr>
+					<td align="left">
+						<%= link_to game do %>
+							<%= fa_icon 'link' %>
+							<%= game.name %>
+						<% end %>
+					</td>
+					<td align="right"><%= time_ago_in_words(game.created_at) %></td>
+				</tr>
+			<% end %>
+		</table>
+	</div>
+</div>

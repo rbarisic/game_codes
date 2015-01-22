@@ -2,10 +2,15 @@
 	<div class="l-box">
 
 		<h1><%= @user.nickname %></h1>
+		<h2>Codes uploaded: <%= @user.game_codes.count %></h2>
+
 		<% if @user.game_codes.any? %>
-			Codes uploaded: <% @user.game_codes.each do |code| %>
-				<li>CODE: <%= code.code %> | GAME: <%= link_to code.game %> |</li>
+			Codes
+			<ul>
+			<% @user.game_codes.each do |code| %>
+				<li><small>Game: <%= link_to code.game.name, code.game %></small><br>Code: <%= code.code %><br><br></li>
 			<% end %>
+			</ul>
 		<% else %>
 			<% if @user == current_user %>
 			You haven't added any codes yet.

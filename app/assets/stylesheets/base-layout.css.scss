@@ -20,3 +20,60 @@
 
 	top: 0;
 }
+
+.responsive-form-container {
+	
+	margin-top: 80px;
+	margin-bottom: 80px;
+	.links {
+		text-align: center;
+	}
+}
+
+.responsive-form {
+	
+	color: #999 !important;
+	background: #fff;
+
+	padding: 1.8rem 2rem;
+
+	border-bottom: 3px solid #eee;
+	border-radius: 3px;
+
+	box-shadow: 0 0 1px 0 #999;
+
+	margin: 1rem auto;
+
+	h2 {
+		font-weight: 300;
+		font-size: 1.5rem;
+		padding: 0;
+		margin: 0;
+		color: #999;
+		margin-bottom: 0.9rem;
+	}
+
+	legend {
+		color: #999;
+
+		font-size: 0.8rem;	
+
+		margin-bottom: 0.5rem;
+		padding-top: 0.5rem;
+		border: none;
+		border-top: 1px solid #eee;
+	}
+
+	.field {
+		margin-bottom: 0.5rem;
+	}
+}
+
+
+@media screen and (min-width: 44em) {
+
+	.responsive-form {
+		width: 400px;
+	}
+
+}

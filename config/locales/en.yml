@@ -21,3 +21,7 @@
 
 en:
   hello: "Hello world"
+  form_nickname: 'Nickname'
+  form_email: 'Email Address'
+  form_pw: 'Password'
+  form_pw_conf: 'Confirm your Password'

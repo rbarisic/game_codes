@@ -14,8 +14,8 @@ end
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 # Create static admin account
-User.create(nickname: 'xiq',
-			email: 'xiqxiq@rocketmail.com', 
+User.create(nickname: 'admin',
+			email: 'admin@example.com', 
 			password: 'alpine123',
 			password_confirmation: 'alpine123',
 			admin: true)
