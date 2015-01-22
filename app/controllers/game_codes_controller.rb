@@ -7,10 +7,8 @@ class GameCodesController < ApplicationController
 	def create
 		game = Game.find(params[:game_code][:game_id])
 		
-		@gamecode = GameCode.new(code_length: game.code_length)
-		@gamecode.user_id = current_user.id
-		@gamecode.update_attributes(gamecode_params)
-		if @gamecode.save
+		@gamecode = GameCode.new(user_id: current_user.id, code_length: game.code_length)
+		if @gamecode.update_attributes(gamecode_params)
 			redirect_to @gamecode.game
 		else
 			render 'new'
