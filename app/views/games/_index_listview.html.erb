@@ -1,0 +1,36 @@
+<div class="pure-layout pure-layout-960">
+	<div class="pure-g">
+		<div class="pure-u-1-5">
+			<div class="window distanced round">
+				<div class="heading">
+					Sidebar
+				</div>
+				<div class="content">
+					Hello
+				</div>
+			</div>
+		</div>
+		<div class="pure-u-4-5">
+			<div class="window distanced round">
+				<div class="heading">
+					Games
+				</div>
+				<div class="content">
+					<% @games.each do |game| %>
+						<div class="game-info-table">
+							<div class="heading">
+								<h2><%= game.name %></h2>
+								<span class="subheading">Total codes: <%= game.game_codes.count %></span>
+							</div>
+							<div class="content">
+								<p class="description">
+									<%= game.description %>
+								</p>
+							</div>
+						</div>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

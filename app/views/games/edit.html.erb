@@ -1,13 +1,16 @@
 <div class="pure-layout pure-layout-960">
-<% if @game.errors.any? %>
-	<ul>
-	<% @game.errors.full_messages.each do |error| %>
-		<li><%= error %></li>
-	<% end %>
-	</ul>
-<% end %> 
-
 <h1 class="text-center">Edit Game</h1>
+
+	<div class="errors">
+		<% if @game.errors.any? %>
+			<ul>
+			<% @game.errors.full_messages.each do |error| %>
+				<li><%= error %></li>
+			<% end %>
+			</ul>
+		<% end %>
+	</div>
+
 	<%= form_for @game, html: { class: 'pure-form pure-form-stacked'} do |f| %>
 		<%= f.label :name %>
 		<%= f.text_field :name %>

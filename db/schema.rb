@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150121131902) do
+ActiveRecord::Schema.define(version: 20150123151521) do
 
   create_table "game_codes", force: true do |t|
     t.string   "code"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20150121131902) do
     t.string   "cover_url"
     t.string   "company_url"
     t.integer  "code_length"
+    t.text     "description"
   end
 
   add_index "games", ["game_codes_id"], name: "index_games_on_game_codes_id"
@@ -62,4 +63,5 @@ ActiveRecord::Schema.define(version: 20150121131902) do
   add_index "users", ["game_code_id"], name: "index_users_on_game_code_id"
   add_index "users", ["nickname"], name: "index_users_on_nickname"
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  
 end

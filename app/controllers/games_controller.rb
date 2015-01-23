@@ -9,7 +9,7 @@ class GamesController < ApplicationController
 		if @game.save
 			redirect_to @game
 		else
-			render :new
+			render 'new'
 		end
 	end
 
@@ -43,6 +43,6 @@ class GamesController < ApplicationController
 
 	private
 		def game_params
-	      params.require(:game).permit(:name, :creator, :company_url, :cover_url)
+	      params.require(:game).permit(:name, :creator, :company_url, :code_length, :cover_url, :description)
 	    end
 end

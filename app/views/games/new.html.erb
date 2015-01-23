@@ -8,13 +8,19 @@
 
 <h1 class="text-center">Edit Game</h1>
 <div class="pure-layout pure-layout-960">
-		<%= form_for :game, html: { class: 'pure-form pure-form-stacked'} do |f| %>
+		<%= form_for @game, html: { class: 'pure-form pure-form-stacked'} do |f| %>
 			<%= f.label :name %>
 			<%= f.text_field :name %>
 			<%= f.label :creator %>
 			<%= f.text_field :creator %>
 			<%= f.label :company_url %>
 			<%= f.text_field :company_url %>
+			<%= f.label :cover_url %>
+			<%= f.text_field :cover_url, placeholder: '.png, .jpg, .gif' %>
+			<%= f.label :code_length %>
+			<%= f.number_field :code_length, placeholder: 'Important' %>
+			<%= f.label :description %>
+			<%= f.text_area :description %>
 			<%= f.submit %>
 		<% end %>
 
