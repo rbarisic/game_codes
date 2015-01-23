@@ -1,30 +1,17 @@
-<div class="pure-layout pure-layout-fullwidth">
+<div class="window-toolbar">
+	<div class="non-mobile text right">
+	<%= render 'shared/gallery_selector' unless @view == 'listview' %>
+	<legend>View</legend>
+	<%= link_to '<i class="fa fa-th fa-fw"></i>'.html_safe, games_path(view: 'gallery'), class: tb_active!(games_path(view: 'gallery')) %>
 
-	<div class="text-center">
-		<h1>All Games</h1>
-		<% if user_signed_in? && current_user.admin %>
-			<%= link_to 'Add', new_game_path %> a new game.there are currently <%= link_to '20' %> open Requests.
-		<% else %>
-			<%= link_to 'Request' %> a new game.
-		<% end %>
-	</div>
+	<%= link_to '<i class="fa fa-list fa-fw"></i>'.html_safe, games_path(view: 'listview'), class: tb_active!(games_path(view: 'listview')) %>
 	
-	<div class="window-toolbar">
-		<%= render '/shared/gallery_selector' if @games.count > 2 %>
 	</div>
-
-	<div class="pure-g">
-		<% @games.each do |game| %>
-			<div name="resizable" class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-4 pure-resizable">
-				<div class="window distanced noborder">
-					<div class="content nopadding">
-						<%= link_to game do %>
-							<%= image_tag(game.cover_url ||= 'default-cover.jpg', class: 'pure-img-x') %>
-						<% end %>
-					</div>
-				</div>
-			</div>
-		<% end %>
-	</div>
-	
 </div>
+
+<% case(@view) %>
+	<% when 'gallery', nil %>
+		<%= render 'index_gallery' %>
+	<% when 'listview' %>
+		<%= render 'index_listview' %>
+<% end %>

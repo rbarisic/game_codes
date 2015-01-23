@@ -15,6 +15,7 @@ class GamesController < ApplicationController
 
 	def index
 		@games = Game.all
+		@view = params[:view]
 	end
 
 	def show

@@ -7,11 +7,9 @@
 
 ##Game Codes Objec
 
--Validate through Game.code_length []
+-Validate through Game.code_length [ ]
 
 ##Game Object
 
 
-
 #User Object
-
