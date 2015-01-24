@@ -1,0 +1,687 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"p",
+				"position"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"a",
+				"AddToElementById"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"er",
+				"ergebnisBox"
+			],
+			[
+				"ver",
+				"versicherungMonatlich"
+			],
+			[
+				"verbra",
+				"verbrauchAufHundertKilometer"
+			],
+			[
+				"spri",
+				"spritKosten"
+			],
+			[
+				"kilometer",
+				"kilometerProJahr"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
+				"div_star",
+				"div_tag_start_flag"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"background-o",
+				"background-position"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"Hard",
+				"Hardware-Reselling"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"list-",
+				"list-style-type"
+			],
+			[
+				"tabl",
+				"table-column"
+			],
+			[
+				"table",
+				"table-cell"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"f",
+				"f.	f.check_box (ffcb)"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"cell",
+				"cellspacing	Attr"
+			],
+			[
+				"backgroun",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"package ",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 160.0,
+		"history":
+		[
+			"help",
+			"ls",
+			"runner.rb",
+			"ruby",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/github/game_codes"
+	],
+	"file_history":
+	[
+		"/C/github/homepage_provider/app/views/accounts/index.json.jbuilder",
+		"/C/github/homepage_provider/app/views/accounts/index.html.erb",
+		"/C/github/homepage_provider/app/views/homepages/index.html.erb",
+		"/C/github/homepage_provider/app/views/homepages/index.json.jbuilder",
+		"/C/github/homepage_provider/app/views/welcome/index.html.erb",
+		"/C/github/homepage_provider/config/initializers/inflections.rb",
+		"/C/github/homepage_provider/config/initializers/filter_parameter_logging.rb",
+		"/C/github/homepage_provider/config/initializers/wrap_parameters.rb",
+		"/C/github/homepage_provider/app/views/shared/_navigation_sidebar.html.erb",
+		"/C/github/homepage_provider/config/application.rb",
+		"/C/github/homepage_provider/Gemfile",
+		"/C/github/game_codes/Gemfile",
+		"/C/github/homepage_provider/app/views/layouts/application.html.erb",
+		"/C/github/homepage_provider/app/helpers/application_helper.rb",
+		"/C/github/homepage_provider/app/assets/stylesheets/header.css.scss",
+		"/C/github/homepage_provider/app/assets/stylesheets/application.css",
+		"/C/github/homepage_provider/app/assets/stylesheets/welcome.css.scss",
+		"/C/github/homepage_provider/app/assets/stylesheets/accounts.css.scss",
+		"/C/github/homepage_provider/app/assets/stylesheets/homepages.css.scss",
+		"/C/github/homepage_provider/app/assets/stylesheets/scaffolds.css.scss",
+		"/C/github/homepage_provider/tmp/cache/assets/development/sass/e7f593de4de580be92b3aa48ef8b35d0467994a9/header.css.scssc",
+		"/C/github/homepage_provider/app/assets/stylesheets/spooner/base.css",
+		"/C/github/homepage_provider/app/assets/stylesheets/footer.css",
+		"/C/github/homepage_provider/app/assets/stylesheets/custom.css",
+		"/C/github/homepage_provider/.gitignore",
+		"/C/github/homepage_provider/db/migrate/20150114141658_add_data_to_account.rb",
+		"/C/github/homepage_provider/config/boot.rb",
+		"/C/github/homepage_provider/bin/bundle",
+		"/C/github/homepage_provider/db/migrate/20150108121118_devise_create_users.rb",
+		"/C/github/homepage_provider/config.ru",
+		"/C/github/homepage_provider/config/database.yml",
+		"/C/github/css effects/buttons.html",
+		"/C/github/css effects/buttons.css",
+		"/C/github/landing_page/assets/stylesheets/design.css",
+		"/C/github/landing_page/assets/javascript/scroll.js",
+		"/C/github/landing_page/index.html",
+		"/C/Users/xiq/Desktop/Web/xrlabs/index.html",
+		"/C/Users/xiq/Desktop/Web/muehle/index.html",
+		"/C/Users/xiq/Desktop/Web/muehle/muehle.js",
+		"/C/Users/xiq/Documents/Yeah",
+		"/C/Users/xiq/Desktop/Web/muehle/muehle.css",
+		"/C/phonegap/autokosten/www/index.html",
+		"/C/Users/xiq/Desktop/Web/autokostenrechner/autokosten.html",
+		"/C/Users/xiq/Desktop/Web/autokostenrechner/design.css",
+		"/C/phonegap/autokosten/config.xml",
+		"/C/Users/xiq/Desktop/Web/xrlabs/assets/layout/index.css",
+		"/C/Users/xiq/Desktop/Web/xrlabs/index.development.html",
+		"/C/Users/xiq/Desktop/Web/xrlabs/index.php",
+		"/C/Users/xiq/Desktop/Web/xrlabs/skeleton.html",
+		"/C/Users/xiq/Desktop/Web/xrlabs/assets/layout/layout-web.css",
+		"/C/Users/xiq/Desktop/Web/autokostenrechner/index.html",
+		"/C/Users/xiq/Desktop/index.php",
+		"/C/Users/xiq/Desktop/Web/autokostenrechner/index-mini.html",
+		"/C/Users/xiq/Desktop/autokosten.md",
+		"/C/my-app/www/css/index.css",
+		"/C/my-app/www/login.html",
+		"/C/my-app/node_modules/ant/ant/manual/api/org/apache/tools/ant/types/selectors/ContainsSelector.html",
+		"/C/my-app/node_modules/ant/ant/manual/api/org/apache/tools/ant/types/CommandlineJava.SysProperties.html",
+		"/C/my-app/config.xml",
+		"/C/my-app/www/index.html",
+		"/C/my-app/www/help.html",
+		"/C/my-app/platforms/android/CordovaLib/src/com/squareup/okhttp/internal/spdy/SpdyStream.java",
+		"/C/ruby_projects/open_game/lib/open_game.rb",
+		"/C/ruby_projects/open_game/lib/open_game/stage.rb",
+		"/C/ruby_projects/open_game/lib/open_game/input.rb",
+		"/C/ruby_projects/open_game/runner.rb",
+		"/C/ruby_projects/open_game/open_game.gemspec",
+		"/C/ruby_projects/open_game/Gemfile",
+		"/C/ruby_projects/open_game/opengame.rb",
+		"/C/ruby_projects/ruby_parser/ruby_parser.rb",
+		"/C/ruby_projects/ruby_parser/test.md.html",
+		"/C/ruby_projects/ruby_parser/test.md",
+		"/C/Users/xiq/Documents/Text1",
+		"/C/Users/xiq/Documents/ssh_key.public",
+		"/C/ruby_projects/file_io/io.rb",
+		"/C/ruby_projects/ruby_parser/test.txtlol",
+		"/C/ruby_projects/ruby_parser/test.txt",
+		"/C/ruby_projects/learn_rgss/battle.rb",
+		"/C/RPGXP/battle.rb",
+		"/C/RPGXP/Meister/Data/Scripts.rxdata",
+		"/C/Users/xiq/Desktop/site.html",
+		"/C/rails/alliance_codes/app/views/shared/_error_messages.erb",
+		"/C/rails/alliance_codes/app/controllers/users_controller.rb",
+		"/C/rails/alliance_codes/app/views/users/index.html.erb",
+		"/C/rails/alliance_codes/app/views/users/new.html.erb",
+		"/C/rails/alliance_codes/test/helpers/static_pages_helper_test.rb",
+		"/C/rails/alliance_codes/app/helpers/static_pages_helper.rb",
+		"/C/rails/alliance_codes/app/controllers/static_pages_controller.rb",
+		"/C/rails/alliance_codes/app/views/users/show.html.erb",
+		"/C/rails/alliance_codes/test/fixtures/users.yml",
+		"/C/rails/alliance_codes/test/models/user_test.rb",
+		"/C/rails/alliance_codes/app/models/user.rb",
+		"/C/rails/alliance_codes/app/views/static_pages/index.html.erb",
+		"/C/rails/alliance_codes/config/routes.rb",
+		"/C/rails/alliance_codes/app/models/post.rb",
+		"/C/rails/alliance_codes/test/controllers/static_pages_controller_test.rb",
+		"/C/rails/alliance_codes/test/controllers/.keep",
+		"/C/rails/alliance_codes/app/controllers/concerns/.keep",
+		"/C/rails/alliance_codes/spec/controllers/users_controller_spec.rb",
+		"/C/rails/alliance_codes/app/controllers/application_controller.rb",
+		"/C/rails/alliance_codes/spec/views/users/delete.html.erb_spec.rb",
+		"/C/rails/alliance_codes/app/views/users/delete.html.erb",
+		"/C/rails/alliance_codes/db/migrate/20141030181708_create_users.rb",
+		"/C/rails/alliance_codes/app/assets/stylesheets/layout-web.css",
+		"/C/rails/alliance_codes/app/assets/stylesheets/spanoffset.css",
+		"/C/rails/alliance_codes/app/views/layouts/application.html.erb",
+		"/C/rails/alliance_codes/app/helpers/application_helper.rb",
+		"/C/rails/alliance_codes/app/assets/stylesheets/application.css",
+		"/C/rails/alliance_codes/app/assets/javascripts/application.js",
+		"/C/rails/alliance_codes/config/application.rb",
+		"/C/rails/alliance_codes/config/initializers/mime_types.rb",
+		"/C/rails/alliance_codes/config/initializers/wrap_parameters.rb",
+		"/C/rails/alliance_codes/config.ru",
+		"/C/rails/alliance_codes/spec/views/users/new.html.erb_spec.rb",
+		"/C/rails/alliance_codes/spec/views/users/index.html.erb_spec.rb",
+		"/C/Users/xiq/Documents/git/html-lab/includes/head.in",
+		"/C/Users/xiq/Documents/git/html-lab/index.php",
+		"/C/rails/alliance_codes/config/initializers/inflections.rb",
+		"/C/rails/alliance_codes/Gemfile",
+		"/C/rails/alliance_codes/config/secrets.yml",
+		"/C/rails/alliance_codes/Rakefile",
+		"/C/rails/alliance_codes/app/assets/javascripts/static_pages.js.coffee",
+		"/C/rails/alliance_codes/app/assets/stylesheets/static_pages.css.scss",
+		"/C/rails/alliance_codes/config/initializers/session_store.rb",
+		"/C/rails/alliance_codes/config/initializers/cookies_serializer.rb",
+		"/C/rails/gm-backend/db/migrate/20141028182127_add_name_to_lol.rb",
+		"/C/rails/gm-backend/app/controllers/lols_controller.rb",
+		"/C/rails/gm-backend/config/routes.rb"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"font",
+			"h4",
+			"xl",
+			"footer",
+			".footer.pure-form",
+			".footer",
+			"footer",
+			".fa",
+			"pure",
+			"clear",
+			"feld",
+			"obj",
+			"var ",
+			">\n",
+			"255",
+			"5px",
+			"u-md",
+			"i",
+			"height",
+			"p",
+			"4",
+			"img",
+			"	a",
+			"tooltip",
+			"u-md",
+			"isNumber",
+			"isNaN",
+			"-u-sm",
+			"u-sd",
+			"u-md",
+			"awd",
+			"60",
+			"spritAufHundertKilometer",
+			"height",
+			"line_processed = true",
+			"      line_processed = true\n",
+			"line = ",
+			"e.readlines(filename)\n  f.each do |line|\n  puts line\nend",
+			"unit",
+			"center",
+			"\n			",
+			"\\t\\t\\t\\t",
+			"\\t",
+			"element",
+			"				<",
+			"horizontal",
+			"<img class=\"intext\" src=\"./assets/header-2.jpg\">",
+			"$",
+			"$+",
+			"liste",
+			"für bewerber",
+			"<div class=\"social-button\">",
+			"<div id=\"header-social\">",
+			"			<div id=\"header-social\">",
+			"p>",
+			"p",
+			"\n        <du\n          u</span>&nbsp;&nbsp;&nbsp;&u\n          uclass=\"w1\"><span class=\"G\">up;|\n          u\" class=\"w1\"><span class=\"Gu&nbsp;|\n          us=\"w1\"><span class=\"G\">u\n        </u\n      </diu\n    </div>\n    <scripuenstleistungen im Gesuus\"></script><script>\n      (funuect']=r;i[r]=i[r]||function()u\n      (i[runew Date();a=s.createEleu\n      m=s.u=g;m.parentNode.insertBeu\n      })(wuytics.com/analytics.js','ga')u\n      ",
+			"\n      <divu\n        <du\n          u</span>&nbsp;&nbsp;&nbsp;&u\n          uclass=\"w1\"><span class=\"G\">up;|\n          u\" class=\"w1\"><span class=\"Gu&nbsp;|\n          us=\"w1\"><span class=\"G\">u\n        </u\n      </diu\n    </div>\n    <scripuenstleistungen im Gesuus\"></script><script>\n      (funuect']=r;i[r]=i[r]||function()u\n      (i[runew Date();a=s.createEleu\n      m=s.u=g;m.parentNode.insertBeu\n      })(wuytics.com/analytics",
+			"Hayfield",
+			"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n\n<html>\n<head>\n<title>Project Ambivalence - xrlabs SHMUP</title>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"assets/layout/normalize.css\" media=\"all\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"assets/layout/layout-mobile.css\" media=\"mobile\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"assets/layout/layout-web.css\" media=\"screen\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"assets/layout/javascript.css\" media=\"all\">\n<link href='http://fonts.googleapis.com/css?family=Titillium+Web:700,200,400' rel='stylesheet' type='text/css'>\n<meta name=\"keywords\" content=\"xrl, Web Layouts\">\n<meta name=\"author\" content=\"Robert Barisic\">\n<noscript><p class=\"noscript\">Please enable Javascript or <a href=\"https://www.mozilla.org/en/firefox/\">update your browser</a>.</p></noscript>\n\n</head>\n\n<body>\n	<div id=\"frame\">\n		<div id=\"header\">\n			<div id=\"header-content\">\n				<h1>Project Ambivalence</h1>\n				<p>Highspeed Retro Action for Android!</p>\n			</div>\n			<div id=\"header-navigation\">\n				\n			</div>\n		</div>\n\n		<div id=\"content\">\n			<div class=\"container-2\">\n				<h2>Fast Paced Action</h2>\n				<p>Lorem ipsum dolor sit amet</p>\n				<p>Lorem ipsum dolor sit amet</p>\n				<p>Lorem ipsum dolor sit amet</p>\n				<p>Lorem ipsum dolor sit amet</p>\n				<p>Lorem ipsum dolor sit amet</p>\n			</div>\n			<div class=\"container-2\">\n				<h2>Lovely 8-Bit Graphics</h2>\n				<p>Lorem ipsum dolor sit amet</p>\n				<p>Lorem ipsum dolor sit amet</p>\n				<p>Lorem ipsum dolor sit amet</p>\n				<p>Lorem ipsum dolor sit amet</p>\n				<p>Lorem ipsum dolor sit amet</p>\n			</div>\n		</div>\n\n		<div id=\"footer\">\n			<div id=\"footer-navigation\">\n				\n			</div>\n			<div id=\"footer-highlight\">\n				\n			</div>\n			<div id=\"footer-content\">\n				\n			</div>\n		</div>\n	</div>\n</body>\n</html>",
+			"h2",
+			"<div class=\"container-2\">",
+			"thomas",
+			"</p>",
+			"<p>",
+			"black",
+			"postal",
+			"80",
+			"20",
+			"bgcolor=\"red\"",
+			"<td>",
+			"d>",
+			"guck",
+			"hitler",
+			"<td>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".pure-form.pure-form-full",
+			"#footer",
+			"u-sm",
+			"-u-md",
+			"u-sm",
+			"u-sd",
+			"verbrauchAufHundertKilometer",
+			"return ",
+			"window",
+			"",
+			"\\n",
+			"xrlabs",
+			"h1",
+			"<br>",
+			"",
+			"<li>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 130.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "game.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"applhtm",
+				"app\\views\\layouts\\application.html.erb"
+			],
+			[
+				"custom",
+				"app\\assets\\stylesheets\\custom.css"
+			],
+			[
+				"gemfi",
+				"Gemfile"
+			],
+			[
+				"databa",
+				"config\\database.yml"
+			],
+			[
+				"indecss",
+				"www\\css\\index.css"
+			],
+			[
+				"index.css",
+				"www\\css\\index.css"
+			],
+			[
+				"",
+				"C:\\RPGXP\\battle.rb"
+			],
+			[
+				"usersindex",
+				"app\\views\\users\\index.html.erb"
+			],
+			[
+				"user",
+				"app\\controllers\\users_controller.rb"
+			],
+			[
+				"routes",
+				"config\\routes.rb"
+			],
+			[
+				"controller",
+				"app\\controllers\\static_pages_controller.rb"
+			],
+			[
+				"index",
+				"app\\views\\static_pages\\index.html.erb"
+			],
+			[
+				"apphtml.",
+				"app\\views\\layouts\\application.html.erb"
+			],
+			[
+				"migra",
+				"db\\migrate\\20141030181708_create_users.rb"
+			],
+			[
+				"web",
+				"app\\assets\\stylesheets\\layout-web.css"
+			],
+			[
+				"conuser",
+				"app\\controllers\\users_controller.rb"
+			],
+			[
+				"ucont",
+				"app\\controllers\\users_controller.rb"
+			],
+			[
+				"uscon",
+				"app\\controllers\\users_controller.rb"
+			],
+			[
+				"unew",
+				"app\\views\\users\\new.html.erb"
+			],
+			[
+				"usin",
+				"app\\views\\users\\index.html.erb"
+			],
+			[
+				"appliaction.htm",
+				"app\\views\\layouts\\application.html.erb"
+			],
+			[
+				"applicahtml",
+				"app\\views\\layouts\\application.html.erb"
+			],
+			[
+				"aphtml",
+				"app\\views\\layouts\\application.html.erb"
+			],
+			[
+				"apher",
+				"app\\helpers\\application_helper.rb"
+			],
+			[
+				"applicat",
+				"app\\views\\layouts\\application.html.erb"
+			],
+			[
+				"layout",
+				"app\\assets\\stylesheets\\layout-web.css"
+			],
+			[
+				"applihtm",
+				"app\\views\\layouts\\application.html.erb"
+			],
+			[
+				"stati",
+				"app\\controllers\\static_pages_controller.rb"
+			],
+			[
+				"application",
+				"app\\views\\layouts\\application.html.erb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 133.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
