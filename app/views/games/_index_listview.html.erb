@@ -1,6 +1,6 @@
 <div class="pure-layout pure-layout-960">
 	<div class="pure-g">
-		<div class="pure-u-1-5">
+		<div class="pure-u-1 pure-u-md-1-3">
 			<div class="window distanced round">
 				<div class="heading">
 					Sidebar
@@ -10,7 +10,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="pure-u-4-5">
+		<div class="pure-u-1 pure-u-md-2-3">
 			<div class="window distanced round">
 				<div class="heading">
 					Games
@@ -19,13 +19,42 @@
 					<% @games.each do |game| %>
 						<div class="game-info-table">
 							<div class="heading">
-								<h2><%= game.name %></h2>
-								<span class="subheading">Total codes: <%= game.game_codes.count %></span>
+								<div class="pure-g">
+									<div class="pure-u-1-5">
+										<div class="game-picture-small-container" style="padding: 0.3em">
+											<%= image_tag game.cover_url || 'default-cover.jpg', class: 'game-picture-small' %>
+										</div>
+									</div>
+									<div class="pure-u-4-5">
+										<div style="padding: 0.3em">
+											<h2><%= game.name %></h2>
+											<span class="subheading">Total codes: <%= game.game_codes.count %></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="content">
+								Add your code:
+								<%= form_for @game_code do |f| %>
+									<%= f.text_field :code, placeholder: "Code length: #{game.code_length}" %> 
+									<%= f.hidden_field :game_id, value: game.id %>
+									<br />
+									<%= f.submit 'add' %>
+								<% end %>
 							</div>
 							<div class="content">
 								<p class="description">
 									<%= game.description %>
 								</p>
+							</div>
+							<div class="content">
+								<b>Newest Game Codes:</b>
+								<ul>
+									<% game.game_codes.last(5).each do |code| %>
+										<li><%= code.code %></li>
+									<% end %>
+									<li><%= link_to 'more...', game_path(game) %>
+								</ul>
 							</div>
 						</div>
 					<% end %>

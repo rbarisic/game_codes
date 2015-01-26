@@ -68,9 +68,13 @@ div.pagination {
 	margin-top: 4em;
 	padding: 1em;
 
-	color: #fff;
+	color: #999;
 	background: #29313E;
 
+	legend {
+		color: #fff;
+	}
+	
 	ul {
 		list-style: none;
 		padding-left: 0;
@@ -95,6 +99,7 @@ div.pagination {
 	position: sticky;
 
 	top: 0;
+	z-index: 20000;
 }
 
 .responsive-form-container {
@@ -145,9 +150,11 @@ div.pagination {
 	}
 }
 
-
+.game-picture-small-container { overflow: hidden; height: 6em;}
+.game-picture-small { height: 6em; width: 100%; }
 .game-container {
 	
+	position: relative;
 	transition: all 1s;
 	min-height: 40vh;
 	width: 100%;	
@@ -156,22 +163,28 @@ div.pagination {
 	background-repeat: none;
 	background-size: cover;
 
-	:hover {
-		background: #ccc;
-	}
-
 	.header {
 		width: 100%;
 		background: rgba(0,0,0,0.7);
-		h1 {
-			font-weight: 300;
+		padding: 0.5rem;
+		color: white;
+		h1 { 
 			font-size: 1.5rem;
-			padding: 0.5rem;
-			color: white;
+			font-weight: 300;
+			margin: 0 0 0.3rem 0;
+
+		}
+		span.codes {
+			padding: 0; margin: 0;
+			color: rgba(255,255,255,0.8);
+			font-size: 0.9rem;
 		}
 	}
 
 	.dock-bottom {
+		padding: 8px;
+		position: absolute;
+		bottom: 0;
 	}
 }
 

@@ -1,6 +1,16 @@
 <div class="pure-layout pure-layout-960 pure-layout-window">
 	<div class="l-box">
 		<h1><%= @game.name %></h1>
+			<div class="content">
+				<% if user_signed_in? %>
+					Add a new game code.
+					<%= form_for @game_code, html: { class: 'pure-form'} do |f| %>
+						<%= f.text_field :code, placeholder: "Code length: #{@game.code_length}" %>
+						<%= f.hidden_field :game_id, value: @game.id %>
+						<%= f.submit 'add', class: 'pure-button pure-button-primary' %>
+					<% end %>
+				<% end %>
+			</div>
 		<div class="pure-g">
 			<div class="pure-u-1">
 				<div class="window">
@@ -10,6 +20,7 @@
 						<li>Company Website: <%= link_to @game.company_url, @game.company_url, rel: 'nofollow', target: '_blank' || 'not known' %></li>
 						</ul>
 					</div>
+
 					<div class="content">
 						<% if @game.game_codes.any? %>
 							All Codes for <%= @game.name %>:
@@ -20,12 +31,7 @@
 							</ul>
 							<%= will_paginate @gamecodes %>
 						<% else %>
-							No Game Codes yet. Add one please.
-							<br><br>
-							<%= label 'Gamecode', 'Gamecode' %>:
-							<%= text_field 'hello', 'hell' %>
-							<br><br>
-							<%= submit_tag 'submit' %>
+							No Game Codes yet.
 						<% end %>
 					</div>
 				</div>
@@ -37,7 +43,7 @@
 				<%= link_to 'Edit', edit_game_path(@game), class: 'pure-button' %>
 			<% end %>
 
-			<%= link_to 'Go Back', games_path, class: 'pure-button' %>
+			<%= link_to 'Go Back', :back, class: 'pure-button' %>
 		</div>
 	</div>
 </div>

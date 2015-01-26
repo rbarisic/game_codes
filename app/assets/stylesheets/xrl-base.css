@@ -49,9 +49,11 @@ div.window {
 	overflow: hidden;
 }
 
-div.window.round {
-	border-radius: 12px;
-}
+div.window.fixed { position: fixed; }
+
+div.window.full { width: 100%; }
+
+div.window.round { border-radius: 12px; }
 
 .window div.heading {
 	display: block;
@@ -60,9 +62,7 @@ div.window.round {
 	border-bottom: 1px solid #eee;
 }
 
-.window div.content {
-	padding: 1em;
-}
+.window div.content { padding: 1em; }
 
 ul.nolist {
 	list-style: none;
@@ -91,6 +91,12 @@ div.window.distanced {
 
 	color: white;
 	background: #29313E;
+}
+
+.window-toolbar.sticky {
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: sticky;
 }
 
 .window-toolbar legend {

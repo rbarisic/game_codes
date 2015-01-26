@@ -18,10 +18,10 @@
 
 .pure-button-primary {
 	color: #eee;
+}
 
-	:hover {
-		color: #fff;
-	}
+.pure-button-primary:hover {
+	color: #fff;
 }
 
 .pure-resizable {
@@ -58,6 +58,7 @@
 
 .l-box {
 	padding: 1em;
+	.content { margin: 1em 0 1em 0; }
 }
 
 .l-box-window {
@@ -176,6 +177,12 @@ button.pure-notification-ribbon.hidden {
 	color: inherit;
 	background: none;
 	border: none;
+}
+
+.pure-form-stacked {
+	legend {
+		color: #999;
+	}
 }
 
 @media screen and (min-width: 64em) {
