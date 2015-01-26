@@ -14,13 +14,13 @@ class GamesController < ApplicationController
 	end
 
 	def index
-		@games = Game.all
+		@games = Game.all.paginate(page: params[:page], per_page: 8)
 		@view = params[:view]
 	end
 
 	def show
 		@game = Game.friendly.find(params[:id])
-		@gamecodes = @game.game_codes
+		@gamecodes = @game.game_codes.paginate(page: params[:page], per_page: 20)
 	end
 
 	def edit

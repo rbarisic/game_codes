@@ -56,12 +56,10 @@ ActiveRecord::Schema.define(version: 20150123151521) do
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
     t.string   "admin",                  default: "f"
-    t.integer  "game_code_id"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["game_code_id"], name: "index_users_on_game_code_id"
   add_index "users", ["nickname"], name: "index_users_on_nickname"
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-  
+
 end

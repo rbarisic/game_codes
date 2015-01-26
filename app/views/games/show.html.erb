@@ -14,10 +14,11 @@
 						<% if @game.game_codes.any? %>
 							All Codes for <%= @game.name %>:
 							<ul>
-								<% @game.game_codes.each do |code| %>
+								<% @gamecodes.each do |code| %>
 									<li><%= code.code %> | submitted by <%= link_to code.user.nickname, code.user %></li>
 								<% end %>
 							</ul>
+							<%= will_paginate @gamecodes %>
 						<% else %>
 							No Game Codes yet. Add one please.
 							<br><br>
