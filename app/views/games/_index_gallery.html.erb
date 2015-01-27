@@ -12,18 +12,18 @@
 	<div class="pure-g">
 	<% @games.each do |game| %>
 		<div name="resizable" class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-4 pure-resizable">
-			<%= link_to game do %>
+			<%= link_to game, class: 'block-link' do %>
 				<div class="window distanced noborder">
 					<div class="content nopadding">
-							<div class="game-container", style="background-image: url(<%= game.cover_url ||= 'default-cover.jpg'%>)">
-								<div class="header">
-									<h1><%= game.name %></h1>
-									<span class="codes">Total codes: <%= game.game_codes.count %></span>
-								</div>
-							    <div class="dock-bottom">
-	    							<%= tweet_button count: 'right', size: 'small', text: "Check out \"#{game.name}\" on Game Codes!", via: 'xrlabs' %>
-								</div>
+						<div class="game-container", style="background-image: url(<%= game.cover_url ||= 'default-cover.jpg'%>)">
+							<div class="header">
+								<h1><%= game.name %></h1>
+								<span class="codes">Total codes: <%= game.game_codes.count %></span>
 							</div>
+						    <div class="dock-bottom">
+    							<%= tweet_button url: game_path(game), count: 'right', size: 'small', text: "Check out \"#{game.name}\" on Game Codes!", via: 'xrlabs' %>
+							</div>
+						</div>
 					</div>
 				</div>
 			<% end %>

@@ -1,4 +1,6 @@
 class GamesController < ApplicationController
+	before_filter :authenticate_user!, except: [:index, :show]
+	before_filter :verify_admin, except: [:index, :show]
 
 	def new
 		@game = Game.new
@@ -46,5 +48,9 @@ class GamesController < ApplicationController
 	private
 		def game_params
 	      params.require(:game).permit(:name, :creator, :company_url, :code_length, :cover_url, :description)
+	    end
+
+	    def verify_admin
+	    	redirect_to(root_path) unless current_user_is_admin
 	    end
 end

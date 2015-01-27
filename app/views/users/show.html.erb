@@ -3,6 +3,7 @@
 
 		<h1><%= @user.nickname %></h1>
 		<h2>Codes uploaded: <%= @user.game_codes.count %></h2>
+		<%= tweet_button unless @user.admin == 't' %>
 
 		<% if @user.game_codes.any? %>
 			Codes
@@ -22,7 +23,7 @@
 
 		<div class="window-controls" id="user-controls">
 			<% if user_signed_in? && current_user.admin? %>
-				<%= link_to 'Edit', edit_user_path(@user), class: 'pure-button' %>
+				<%= link_to 'Edit', edit_user_registration_path(@user), class: 'pure-button' %>
 			<% end %>
 
 			<%= link_to 'Go Back', users_path, class: 'pure-button' %>

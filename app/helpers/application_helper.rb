@@ -13,6 +13,6 @@ module ApplicationHelper
 	#-------------------------------------
 
 	def current_user_is_admin
-		true if current_user.admin
+		true if current_user.admin == 't'
 	end
 end

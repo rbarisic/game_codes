@@ -22,17 +22,30 @@
 					</div>
 
 					<div class="content">
+
 						<% if @game.game_codes.any? %>
-							All Codes for <%= @game.name %>:
-							<ul>
-								<% @gamecodes.each do |code| %>
-									<li><%= code.code %> | submitted by <%= link_to code.user.nickname, code.user %></li>
-								<% end %>
-							</ul>
+						<div class="pagination-container text-center">
 							<%= will_paginate @gamecodes %>
+						</div>
+							<h2>All Codes for <%= @game.name %>:</h2>
+							<table class="pure-table pure-table-striped">
+								<tr>
+									<th align="left">Submitter</th>
+									<th align="left">Code</th>
+								</tr>
+								<% @gamecodes.each do |code| %>
+								<tr>
+									<td><%= link_to code.user.nickname, code.user %></td>
+									<td><%= code.code %></td>
+								</tr>
+								<% end %>
+							</table>
 						<% else %>
 							No Game Codes yet.
 						<% end %>
+						<div class="pagination-container text-center">
+							<%= will_paginate @gamecodes %>
+						</div>
 					</div>
 				</div>
 			</div>

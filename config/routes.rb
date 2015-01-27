@@ -2,8 +2,8 @@ GameCodes::Application.routes.draw do
   
   devise_for :users
 
-  resources :users
-
+  resources :users, except: [:edit, :update]
+  
   resources :games
 
   resources :game_codes
