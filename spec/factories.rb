@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryGirl.define do 
 
 	# Create User
 	factory :user do
