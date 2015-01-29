@@ -1,0 +1,30 @@
+<div class="pure-layout pure-layout-960">
+
+	<% if @game_request.errors.any? %>
+		<ul>
+		<% @game_request.errors.full_messages.each do |error| %>
+			<li><%= error %></li>
+		<% end %>
+		</ul>
+	<% end %> 
+
+	<div class="responsive-form">
+		<h1>Complete Game Details</h1>
+		<p>Use this form to complete the informations of the game.<br />Please note that the Game can only be added to the list after the Informations are complete.</p>
+		<legend>Basic Information</legend>
+		<%= form_for @game_request, html: { class: 'pure-form pure-form-stacked' } do |f| %>
+			<div class="field">
+				<%= f.text_field :name, placeholder: t('form_name') %>
+				<%= f.text_field :creator, placeholder: t('form_creator') %>
+
+				<%= f.text_field :company_url, placeholder: t('form_company_url') %>
+				<%= f.text_field :cover_url, placeholder: t('form_cover_url') %>
+				<%= f.number_field :code_length, placeholder: t('form_code_length') %>
+				<%= f.text_area :description, placeholder: t('form_description') %>
+			</div>
+			<div class="field">
+				<%= f.submit 'Update Entry', class: 'pure-button pure-button-primary' %>
+			</div>
+		<% end %>
+	</div>
+</div>

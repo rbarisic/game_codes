@@ -1,0 +1,23 @@
+<div class="pure-layout pure-layout-960">
+	<h1>Game Requests</h1>
+	<table class="pure-table pure-table-bordered">
+		<thead>
+			<tr class="pure-table-heading">
+				<th>Name</th>
+				<th>Votes</th>
+				<th>Complete</th>
+				<th>Accepted</th>
+			</tr>
+		</thead>
+		<tbody>
+		<% @game_requests.each do |request| %>
+		<tr>
+			<td><%= request.name %></td>
+			<td><span class="badge blue"><%= request.requests %></span></td>
+			<td><%= link_to 'Edit', edit_game_request_path(request), class: 'pure-button' %></td>
+			<td><% if request.accepted == true %><span class="badge blue">YES</span><% else %><span class="badge red">NO</span><% end %></td>
+		</tr>
+		<% end %>
+		</tbody>
+	</table>
+</div>

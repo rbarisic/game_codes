@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150123151521) do
+ActiveRecord::Schema.define(version: 20150128155033) do
 
   create_table "game_codes", force: true do |t|
     t.string   "code"
@@ -24,6 +24,22 @@ ActiveRecord::Schema.define(version: 20150123151521) do
   add_index "game_codes", ["code"], name: "index_game_codes_on_code", unique: true
   add_index "game_codes", ["game_id"], name: "index_game_codes_on_game_id"
   add_index "game_codes", ["user_id"], name: "index_game_codes_on_user_id"
+
+  create_table "game_requests", force: true do |t|
+    t.string   "name"
+    t.boolean  "accepted"
+    t.integer  "requests",    default: 1
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "slug"
+    t.string   "creator"
+    t.string   "cover_url"
+    t.string   "company_url"
+    t.string   "code_length"
+    t.string   "description"
+  end
+
+  add_index "game_requests", ["name"], name: "index_game_requests_on_name", unique: true
 
   create_table "games", force: true do |t|
     t.string   "name"

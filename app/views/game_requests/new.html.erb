@@ -1,0 +1,44 @@
+<% @spinner = "Loading Requests" %>
+
+<script>
+	function searchRequest() {
+		w = $('#responsive-form-animated');
+		w.addClass('responsive-form-full');
+		$('#game-request-form').addClass('text-center');
+		s = $('#search-request-button');
+		s.width(s.width());
+		s.html('<i class="fa fa-circle-o-notch fa-spin"></i>');
+	}
+</script>
+
+<% if @game_request.errors.any? %>
+	<ul>
+	<% @game_request.errors.full_messages.each do |error| %>
+		<li><%= error %></li>
+	<% end %>
+	</ul>
+<% end %> 
+
+<h1 class="text-center">Request a new game.</h1>
+<div class="pure-layout pure-layout-960">
+
+	<div id="responsive-form-animated" class="responsive-form">
+		<%= form_tag :check_requests, remote: true, :'data-update-target' => 'update-container', html: { multipart: true, data_type: 'html', id: 'game-request-form' }, class: 'pure-form' do |f| %>
+
+			<p>Use this form to request a new game.<br />The administrators will add it to the site.</p>
+			<hr>
+
+			<div class="field">
+				<%= text_field_tag :name, nil, placeholder: 'Game Request', autofocus: true %>
+				<%= submit_tag 'Check Requests', disable_with: @spinner, :class => 'pure-button pure-button-primary pure-button-animated', onclick: 'searchRequest()' %>
+			</div>
+			<div id="update-container">
+			</div> 
+			<div class="field">
+				<%= link_to 'Go Back', :back, class: 'pure-button' %>
+			</div>
+
+		<% end %>
+
+	</div>
+</div>

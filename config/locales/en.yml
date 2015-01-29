@@ -21,6 +21,17 @@
 
 en:
   hello: "Hello world"
+
+
+  form_name: 'Name'
+  form_accepted: 'Accepted'
+  form_requests: 'Requests'
+  form_creator: 'Creator'
+  form_cover_url: 'Cover URL'
+  form_company_url: 'Company URL'
+  form_code_length: 'Code Length'
+  form_description: 'Description'
+
   form_nickname: 'Nickname'
   form_email: 'Email Address'
   form_pw: 'Password'

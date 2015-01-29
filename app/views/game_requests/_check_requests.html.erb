@@ -1,0 +1,19 @@
+<h2>These are your Requests:</h2>
+<div class="request">
+	<% @game_requests.each do |request| %>
+		<div >
+			Name: <%= request.name %>
+			<br />
+			<%= pluralize(request.requests, 'Vote') %>
+			<br />
+			Created <%= time_ago_in_words(request.created_at) %>
+			<br />
+			<% if request.completed? %>
+				This request has been completed. <%= link_to 'Add', '#' %> it now.
+			<% else %>
+				This request hasn't been completed yet. <%= link_to 'Edit', edit_game_request_path(request) %> the missing information now.
+			<% end %>
+			<hr>
+		</div>
+	<% end %>
+</div>

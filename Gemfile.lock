@@ -46,7 +46,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
-    columnize (0.8.9)
+    columnize (0.9.0)
     daemons (1.1.9)
     debugger-linecache (1.2.0)
     devise (3.4.1)

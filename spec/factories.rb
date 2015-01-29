@@ -1,4 +1,9 @@
-FactoryGirl.define do 
+FactoryGirl.define do  factory :game_request do
+    name "MyString"
+validated false
+requests 1
+  end
+ 
 
 	# Create User
 	factory :user do

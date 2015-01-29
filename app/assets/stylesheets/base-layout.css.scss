@@ -1,3 +1,26 @@
+#update-container {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	color: #333;
+	h1, h2, h3, h4, h5, h6 {
+		color: #333;
+	}
+	a {
+		text-decoration: underline;
+	}
+}
+
+.request {
+
+	:nth-Child(2n) {
+		color: pink;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
 .pagination-container {
 	
 	margin: 1em;
@@ -124,7 +147,7 @@ div.pagination {
 }
 
 .responsive-form {
-	
+	transition: height 1s ease;
 	color: #999 !important;
 	background: #fff;
 
@@ -136,13 +159,23 @@ div.pagination {
 	box-shadow: 0 0 1px 0 #999;
 
 	margin: 1rem auto;
+	
+	p {
+		color: #888;
+	}
+
+	hr { 
+		border: none;
+		border-top: 1px solid #eee;
+	}
+		
+	h1, h2, h3 { color: #999; }
 
 	h2 {
 		font-weight: 300;
 		font-size: 1.5rem;
 		padding: 0;
 		margin: 0;
-		color: #999;
 		margin-bottom: 0.9rem;
 	}
 
@@ -161,6 +194,26 @@ div.pagination {
 		margin-bottom: 0.5rem;
 	}
 }
+
+.responsive-form-full {
+
+	height: 100% !important;
+	width: 100% !important;
+
+	color: #666 !important;
+	background: #fff;
+
+	padding: 1.8rem 2rem;
+
+	border: none;
+	border-radius: 3px;
+
+	box-shadow: none;
+
+	margin: 1rem auto;	
+}
+
+#responsive-form-animated { transition: all 1s;}
 
 .game-picture-small-container { overflow: hidden; height: 6em;}
 .game-picture-small { height: 6em; width: 100%; }

@@ -1,0 +1,18 @@
+<div class="pure-layout pure-layout-960">
+	<h1>Game Request</h1>
+	<table class="pure-table">
+		<tr>
+			<th>Name</th>
+			<th>Votes</th>
+			<th>Accepted?</th>
+			<th>Completed?</th>
+		</tr>
+		<tr>
+			<td><%= @game_request.name %></td>
+			<td><%= @game_request.requests %></td>
+			<td><% if @game_request.accepted == true %>YES<% else %>NO<% end %></td>
+			<td><% if @game_request.completed? %>YES<% else %>NO<% end %></td>
+		</tr>
+	</table>
+	<%= link_to 'Show All', game_requests_path %>
+</div>

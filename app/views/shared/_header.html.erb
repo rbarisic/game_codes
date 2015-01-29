@@ -42,9 +42,9 @@
 
     <% if user_signed_in? && current_user_is_admin %>
         <% if cookies['adminWarning'] %>
-            <%= render 'shared/admin_warning' %>
+            <%= render 'shared/admin_menu' %>
         <% else %>
-            <%= render 'shared/admin_warning_collapsed' %>
+            <%= render 'shared/admin_menu_collapsed' %>
         <% end %>
     <% end %>
 </div>

@@ -20,8 +20,10 @@
 		<%= f.text_field :company_url %>
 		<%= f.label :cover_url %>
 		<%= f.text_field :cover_url %>
-		<%= f.label :code_lengt %>
+		<%= f.label :code_length %>
 		<%= f.number_field :code_length %>
+		<%= f.label :description %>
+		<%= f.text_area :description %>
 		<%= f.submit 'Save changes', class: 'pure-button pure-button-primary' %>
 	<% end %>
 	<div class="window-controls">

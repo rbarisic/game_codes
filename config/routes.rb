@@ -8,6 +8,7 @@ GameCodes::Application.routes.draw do
 
   resources :game_codes
 
+  resources :game_requests
 
   root 'welcome#index'
   
@@ -15,6 +16,8 @@ GameCodes::Application.routes.draw do
   get "welcome/about"
   get "welcome/imprint"
   
+  post '/check_requests' => 'game_requests#check_requests', as: 'check_requests'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -2,10 +2,10 @@
 
 	<div class="text-center">
 		<h1>All Games</h1>
-		<% if user_signed_in? && current_user.admin %>
+		<% if user_signed_in? && current_user.admin? %>
 			<%= link_to 'Add', new_game_path %> a new game.there are currently <%= link_to '20' %> open Requests.
 		<% else %>
-			<%= link_to 'Request' %> a new game.
+			<%= link_to 'Request', new_game_request_path %> a new game.
 		<% end %>
 	</div>
 

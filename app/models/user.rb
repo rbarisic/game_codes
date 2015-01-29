@@ -5,4 +5,12 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   validates :nickname, presence: true, length: { minimum: 3, maximum: 20 }
   has_many :game_codes
+
+  def admin?
+  	if self.admin == 't'
+  		return true
+  	else
+  		return false
+  	end
+  end
 end
