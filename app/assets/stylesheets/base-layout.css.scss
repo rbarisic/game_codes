@@ -229,6 +229,11 @@ div.pagination {
 	background-repeat: none;
 	background-size: cover;
 
+	a {
+		color: #eee;
+		text-decoration: none;
+	}
+	
 	.header {
 		width: 100%;
 		background: rgba(0,0,0,0.7);
