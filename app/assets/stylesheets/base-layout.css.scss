@@ -233,7 +233,7 @@ div.pagination {
 		color: #eee;
 		text-decoration: none;
 	}
-	
+
 	.header {
 		width: 100%;
 		background: rgba(0,0,0,0.7);
@@ -263,6 +263,10 @@ div.pagination {
 	display: none;
 }
 
+.all-users-list {
+	li:nth-Child(2n) { background: #eee; }
+}
+
 @media screen and (min-width: 44em) {
 
 	.responsive-form {
@@ -275,6 +279,7 @@ div.pagination {
 
 	div.pagination {
 
+		a { text-decoration: none;}
 		a, .gap {
 			display: inline;
 		}

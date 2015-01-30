@@ -115,12 +115,24 @@
 	color: #9f3;
 }
 
-.pure-list-striped li {
-	padding: 0.2em;
-
-	:nth-child(2n) {
-		background: #eee;
+.pure-list, .pure-list-striped {
+	padding-left: 0;
+	font-size: 1rem;
+	list-style-type: none;
+	a {
+		display: block;
+		padding: 0.5em;
+		text-decoration: none;
+		width: 100%;
 	}
+	a:hover { color: #333; background: #ddd; }
+	li {
+		overflow: hidden;
+	}
+}
+
+.pure-list-striped li:nth-child(2n) {
+		background: #f9f9f9;
 }
 
 .pure-notification {

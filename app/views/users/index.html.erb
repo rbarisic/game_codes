@@ -2,11 +2,31 @@
 	<div class="text-center">
 		<h1>All Users</h1>
 	</div>
-
-	<ul class="pure-list-striped gc-user-list">
-	<% @users.each do |user| %>
-		<li><%= link_to user.nickname, user %></li>
-	<% end %>
-	</ul>
-	<%= will_paginate @users %>
+	<div class="pure-g">
+		<div class="pure-u-1 pure-u-lg-3-5">
+			<div class="window distanced">
+				<div class="heading">
+					All Users
+				</div>
+				<div class="content">
+					<ul class="pure-list pure-list-striped">
+					<% @users.each do |user| %>
+						<li><%= link_to user.nickname, user %></li>
+					<% end %>
+					</ul>
+					<div class="center"><%= will_paginate @users %></div>
+				</div>
+			</div>
+		</div>
+		<div class="pure-u-1 pure-u-lg-2-5">
+			<div class="window distanced">
+				<div class="heading">
+				Test Data
+				</div>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum sit consequuntur quidem officiis nesciunt quia delectus animi repudiandae rerum iusto, recusandae quae vitae, maxime porro quasi quos, magnam id distinctio?</p>				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum sit consequuntur quidem officiis nesciunt quia delectus animi repudiandae rerum iusto, recusandae quae vitae, maxime porro quasi quos, magnam id distinctio?</p>				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum sit consequuntur quidem officiis nesciunt quia delectus animi repudiandae rerum iusto, recusandae quae vitae, maxime porro quasi quos, magnam id distinctio?</p>				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum sit consequuntur quidem officiis nesciunt quia delectus animi repudiandae rerum iusto, recusandae quae vitae, maxime porro quasi quos, magnam id distinctio?</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
