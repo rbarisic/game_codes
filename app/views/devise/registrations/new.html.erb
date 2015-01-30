@@ -1,3 +1,9 @@
+<style>
+  body {
+    background: #D6E8A0;
+  }
+</style>
+
 <div class="responsive-form-container">
   <div class="responsive-form">
     <h2>Sign up</h2>
@@ -23,6 +29,13 @@
 
       <div class="field">
         <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: t('form_pw_conf'), class: 'pure-input-1'  %>
+      </div>
+      
+      <div class="field">
+        <label for="community_terms">
+          <%= f.check_box :community_terms %>
+          I Agree to the <%= link_to 'terms of the community', community_terms_path %>.
+        </label>
       </div>
 
       <div class="actions">

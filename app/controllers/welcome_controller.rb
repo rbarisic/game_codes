@@ -14,6 +14,10 @@ class WelcomeController < ApplicationController
   def imprint
   end
 
+  def terms
+    #ToC - Terms of the Community
+  end
+
   private
   	def set_splash
   		@splash = true

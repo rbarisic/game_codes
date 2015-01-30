@@ -12,6 +12,8 @@ a:hover {
 	color: #A8CBFF;
 }
 
+.no-spacing { word-spacing: 0; }
+
 .text-heading {
 }
 

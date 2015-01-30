@@ -1,4 +1,5 @@
 class GameRequest < ActiveRecord::Base
+
 	attr_accessor :completed
 	validates :name, presence: true, length: { minimum: 2, maximum: 255 }
 	validates :requests, numericality: { only_integer: true }

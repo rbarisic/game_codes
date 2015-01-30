@@ -15,7 +15,7 @@ GameCodes::Application.routes.draw do
   get "welcome/help"
   get "welcome/about"
   get "welcome/imprint"
-  
+  get '/community_terms' => 'welcome#terms', as: 'community_terms'  
   post '/check_requests' => 'game_requests#check_requests', as: 'check_requests'
 
   # The priority is based upon order of creation: first created -> highest priority.
