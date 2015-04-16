@@ -56,14 +56,12 @@ class GameRequestsController < ApplicationController
 
 	def check_requests
 		@game_requests = GameRequest.where(name: params[:name])
-		if @game_requests.nil?
-			puts 'FEHLGESCHLAGEN'
-			GameRequest.create(name: params[:name])
-		else
-			puts @game_requests
+		if @game_requests.count
 			respond_to do |format|
-				format.js
+				format.js { @response = "Game already exists." }
 			end
+		elsel
+			GameRequest.create(name: params[:name])
 		end
 	end
 

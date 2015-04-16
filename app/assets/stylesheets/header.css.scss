@@ -1,7 +1,10 @@
 @import "variables";
 
-.hidden {
-	display: none;
+.hidden-item {
+	display: auto;
+	@media screen and (max-width: 48em) {
+		display: none !important;
+	}
 }
 
 #x-header {
@@ -21,10 +24,15 @@
 		margin: 0;
 		padding: 0;
 		font-size: 0;
+		background: #fff;
 		li {
 			font-size: 1rem;
 			margin: 0;
 			display: inline-block;
+			@media screen and (max-width: 48em) {
+				margin: 0;
+				display: block;
+			}
 			a {
 				display: inline-block;
 				padding: 0.5em 1em;
@@ -32,34 +40,68 @@
 				&:hover {
 					background: #eee;
 				}
+				@media screen and (max-width: 48em) {
+					width: calc(98% - 2em);
+					padding: 1em;
+				}
 			}
 			&#active {
-				background: $brand-primary;
+				background: $brand-second;
 				a {
+
 					color: #fff !important;
+					@media screen and (max-width: 48em) {
+						background: #bbb;
+					}
 				}
 				a:hover {
-					background: $brand-primary;
+					background: #ccc;
 				}
 			}
+		}
+		@media screen and (max-width: 48em) {
+			position: absolute;
+			top: 3.7rem;
+			left: 0;
+			right: 2rem;
+		    overflow: hidden;
+		    border: 1px solid #eee;
+		    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 		}
 	}
 	div.x-header-logo {
 		display: inline-block;
 		font-weight: 300;
 		letter-spacing: 0.1em;
-		padding: 0 0.5em;
+		padding: 0.5em;
 		a {
 			color: #333;
 			&:hover {
 				color: #666;
 			}
 		}
+		@media screen and (max-width: 48em) {
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+	@media screen and (max-width: 48em) {
+		font-size: 1.5em;
 	}
 }
 
 #x-header-menu-button {
-	display: inline-block;
+	margin: 0;
 	padding: 0.5em;
+	display: none;
+	border: none;
+	outline: none;
+	background: none;
+	&:hover {
+		background: rgba(0,0,0,0.1);
+	}
+	@media screen and (max-width: 48em) {
+		display: inline-block;
+	}
 }
 

@@ -1,55 +1,79 @@
 <div id="x-header">
-    <div id="x-header-menu-button">
+    <button id="x-header-menu-button">
         <%= fa_icon 'navicon', class: 'fa-fw' %>
-    </div>
+    </button>
 
     <div class="x-header-logo">
         <%= link_to 'Game Codes', root_path %>
     </div>
     
-    <ul>
-        <li id="<%= active!(root_path) %>" class="hidden">
-            <%= link_to 'Home', root_path %>
+    <ul id="submenu" class="hidden-item">
+        <li id="<%= active!(root_path) %>">
+            <%= link_to root_path do %>
+                <%= fa_icon 'home', class: 'fa-fw' %> Home
+            <% end %>
         </li>
 
-        <li id="<%= active!(games_path) %>" class="hidden">
-            <%= link_to 'Games', games_path %>
+        <li id="<%= active!(games_path) %>">
+            <%= link_to games_path do %>
+                <%= fa_icon 'gamepad', class: 'fa-fw' %> Games
+            <% end %>
         </li>
 
-        <li id="<%= active!(users_path) %>" class="hidden">
-            <%= link_to 'Users', users_path %>
+        <li id="<%= active!(users_path) %>">
+            <%= link_to users_path do %>
+                <%= fa_icon 'users', class: 'fa-fw' %> All Users
+            <% end %>
         </li>
 
         <% if user_signed_in? %>
 
-            <li id="<%= active!(user_path(current_user)) %>" class="hidden">
+            <li id="<%= active!(user_path(current_user)) %>">
                 <%= link_to user_path(current_user) do %>
-                    logged in as : <%= current_user.nickname %> <span class="badge secondary"><%= current_user.coins %></span>
+                    <%= fa_icon "user", class: 'fa-fw' %> logged in as : <%= current_user.nickname %> <span class="badge secondary"><%= current_user.coins %></span>
                     <%= fa_icon 'institution' if current_user.admin? %>
                 <% end %>
             </li>
             
-            <li id="<%= active!(destroy_user_session_path) %>" class="hidden">
-                <%= link_to 'logout', destroy_user_session_path, method: :delete %>
+            <li id="<%= active!(destroy_user_session_path) %>">
+                <%= link_to destroy_user_session_path, method: :delete do %>
+                    <%= fa_icon 'sign-out', class: 'fa-fw' %> Logout
+                <% end %>
             </li>
 
             <% else %>
 
-            <li id="<%= active!(new_user_session_path) %>" class="hidden">
-                <%= link_to 'Sign in', new_user_session_path %>
+            <li id="<%= active!(new_user_session_path) %>">
+                <%= link_to new_user_session_path do %>
+                    <%= fa_icon 'sign-in', class: 'fa-fw' %> Sign in
+                <% end %>
             </li>
 
-            <li id="<%= active!(new_user_registration_path) %>" class="hidden">
-                <%= link_to 'Register', new_user_registration_path %>
+            <li id="<%= active!(new_user_registration_path) %>">
+                <%= link_to new_user_registration_path do %>
+                    <%= fa_icon 'asterisk', class: 'fa-fw' %> Register
+                <% end %>
             </li>
         <% end %>
     </ul>
+<% if user_signed_in? && current_user_is_admin %>
+    <% if cookies['adminWarning'] %>
+    <% else %>
+    <% end %>
+<% end %>
 </div>
 
-    <% if user_signed_in? && current_user_is_admin %>
-        <% if cookies['adminWarning'] %>
-            <%= render 'shared/admin_menu' %>
-        <% else %>
-            <%= render 'shared/admin_menu_collapsed' %>
-        <% end %>
-    <% end %>
+
+<script>
+    var btn = $('#x-header-menu-button');
+    var submenu = $("#submenu");
+
+    $(btn).on('click', function() {
+        if (submenu.css('display') == 'none') {
+            submenu.removeClass("hidden-item");
+        }
+        else {
+            submenu.addClass('hidden-item');
+        }
+    });
+</script>

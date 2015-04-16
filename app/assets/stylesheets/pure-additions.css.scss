@@ -14,6 +14,7 @@
 	color: #333;
 	&:hover {
 		color: #222;
+		text-decoration: none !important;
 	}
 }
 
@@ -27,7 +28,7 @@
 
 .pure-button-secondary {
 	color: #fff !important;
-	background-color: $brand-secondary;
+	background-color: $brand-second;
 	&:hover {
 		color: #fff !important;
 	}
@@ -36,6 +37,10 @@
 .pure-button-animated {
 	width: auto;
 	transition: all 1s;
+}
+
+.button-large {
+	font-size: 125%;
 }
 
 .pure-resizable {
@@ -121,9 +126,11 @@
 }
 
 .pure-layout-header a {
-}
-
-.pure-layout-header a:hover {
+	color: rgba(255,255,255,0.7);
+	&:hover {
+		color: #fff;
+		text-decoration: underline;
+	}
 }
 
 .pure-list, .pure-list-striped {
@@ -180,7 +187,7 @@ button.pure-notification-ribbon {
 
 button.pure-notification-ribbon.warning {
 	color: #fff;
-	background-color: #B12C2F;
+	background-color: $brand-third;
 }
 
 button.pure-notification-ribbon.hidden {
@@ -193,23 +200,16 @@ button.pure-notification-ribbon.hidden {
 
 .pure-notification.warning {
 	color: #fff;
-	background: #B12C2F;
+	background: $brand-third;
 
 	a {
-		padding: 0.5em;
+		display: inline-block;
 		color: #fff;
-	}
-	a:hover {
-		color: #fff;
-		background: #BE2F32;
-		border: 1px solid #972628;
-		border-radius: 3px;
-	}
-
-	li {
-		margin-bottom: 0.5em;
+		width: 100%;
 		padding: 0.5em;
-		display: block;
+		&:hover {
+			background: rgba(255,255,255,0.5);
+		}
 	}
 }
 
@@ -246,7 +246,7 @@ button.pure-notification-ribbon.hidden {
 }
 
 .badge.secondary {
-	background-color: $brand-secondary;
+	background-color: $brand-second;
 }
 
 .badge.red {

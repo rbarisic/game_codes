@@ -17,10 +17,6 @@
 }
 
 .request {
-
-	&:nth-Child(2n) {
-		color: pink;
-	}
 }
 
 .hidden {
@@ -264,6 +260,14 @@ div.pagination {
 
 .all-users-list {
 	li:nth-Child(2n) { background: #eee; }
+}
+
+.gotmilk {
+	color: rgba(255,255,255,0.8);
+	font-size: 0.9rem;
+	&:hover {
+		color: #fff;
+	}
 }
 
 @media screen and (min-width: 48em) {

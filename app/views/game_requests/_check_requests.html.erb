@@ -1,19 +1,27 @@
 <h2>These are your Requests:</h2>
 <div class="request">
 	<% @game_requests.each do |request| %>
-		<div >
-			Name: <%= request.name %>
-			<br />
-			<%= pluralize(request.requests, 'Vote') %>
-			<br />
-			Created <%= time_ago_in_words(request.created_at) %>
-			<br />
-			<% if request.completed? %>
-				This request has been completed. <%= link_to 'Add', '#' %> it now.
-			<% else %>
-				This request hasn't been completed yet. <%= link_to 'Edit', edit_game_request_path(request) %> the missing information now.
-			<% end %>
+		<table class="pure-table pure-table-striped">
+			<tr>
+				<th>Name</th>
+				<th>Votes</th>
+				<th>Created at</th>
+				<th>Approved</th>
+			</tr>
+			<tr>
+				<td><%= request.name %></td>
+				<td><%= request.requests %></td>
+				<td><%= time_ago_in_words(request.created_at) %></td>
+				<td>
+					<% if request.completed? %>
+						Yes
+					<% else %>
+						No
+					<% end %>
+				</td>
+			</tr>
+			
 			<hr>
-		</div>
+		</table>
 	<% end %>
 </div>

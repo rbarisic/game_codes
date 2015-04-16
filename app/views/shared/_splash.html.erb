@@ -2,10 +2,13 @@
 	<div class="text-center">
 		<h1 class="text-heading" style="margin: 0.2em 0">Game Codes</h1>
 		<p>This Project lets users share special codes for mobile games.</p>
-		<a class="pure-button pure-button-secondary">Create an Account</a>
-		<% unless user_signed_in? %>
-			<%= link_to 'Sign up', new_user_registration_path %> to participate.
-			<br><%= link_to 'Already got an Account?', new_user_session_path %>
-		<% end %>
+		<div class="l-box-s">
+			<a class="pure-button pure-button-secondary button-large">Create an Account</a>
+		</div>
+		<s class="gotmilk">
+			<% unless user_signed_in? %>
+					<%= link_to 'Already got an Account?', new_user_session_path %>
+			<% end %>
+		</s>
 	</div>
 </div>
