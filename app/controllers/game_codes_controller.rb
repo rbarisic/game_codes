@@ -1,4 +1,5 @@
 class GameCodesController < ApplicationController
+	before_filter :authenticate_user!
 
 	def new
 		@gamecode = GameCode.new(code: params[:game_code][:code])

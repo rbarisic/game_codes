@@ -1,0 +1,65 @@
+@import "variables";
+
+.hidden {
+	display: none;
+}
+
+#x-header {
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: sticky;
+
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 20000;
+	background: #fefefe;
+	ul {
+		display: inline-block;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		font-size: 0;
+		li {
+			font-size: 1rem;
+			margin: 0;
+			display: inline-block;
+			a {
+				display: inline-block;
+				padding: 0.5em 1em;
+				color: #333;
+				&:hover {
+					background: #eee;
+				}
+			}
+			&#active {
+				background: $brand-primary;
+				a {
+					color: #fff !important;
+				}
+				a:hover {
+					background: $brand-primary;
+				}
+			}
+		}
+	}
+	div.x-header-logo {
+		display: inline-block;
+		font-weight: 300;
+		letter-spacing: 0.1em;
+		padding: 0 0.5em;
+		a {
+			color: #333;
+			&:hover {
+				color: #666;
+			}
+		}
+	}
+}
+
+#x-header-menu-button {
+	display: inline-block;
+	padding: 0.5em;
+}
+

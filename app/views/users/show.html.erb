@@ -14,7 +14,7 @@
 			</ul>
 		<% else %>
 			<% if @user == current_user %>
-			You haven't added any codes yet.
+			You didn't add any codes yet.
 			<%= link_to 'Add' %> some.
 			<% else %>
 				<%= @user.nickname %> hasn't added any codes yet.

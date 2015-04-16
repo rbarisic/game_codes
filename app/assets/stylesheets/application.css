@@ -8,8 +8,18 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require variables
  *= require_self
  *= require purecss
  *= require font-awesome
+ *= require base-layout.css.scss
  *= require_tree .
  */
+
+ * {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-weight: 300;
+}

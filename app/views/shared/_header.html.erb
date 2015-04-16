@@ -1,44 +1,50 @@
-<div id="header" class="header">
-    <div class="pure-menu pure-menu-open pure-menu-horizontal">
-        <%= link_to 'Game Codes', root_path, class: 'pure-menu-heading' %>
-        <ul>
-            <li class="<%= active!(root_path) %>">
-                <%= link_to 'Home', root_path %>
-            </li>
-
-            <li class="<%= active!(games_path) %>">
-                <%= link_to 'Games', games_path %>
-            </li>
-
-            <li class="<%= active!(users_path) %>">
-                <%= link_to 'Users', users_path %>
-            </li>
-
-            <% if user_signed_in? %>
-
-        		<li class="<%= active!(user_path(current_user)) %>">
-                    <%= link_to user_path(current_user) do %>
-                        logged in as : <%= current_user.nickname %>
-                        <%= fa_icon 'institution' if current_user.admin? %>
-                    <% end %>
-                </li>
-                
-        		<li class="<%= active!(destroy_user_session_path) %>">
-                    <%= link_to 'logout', destroy_user_session_path, method: :delete %>
-                </li>
-
-                <% else %>
-
-                <li class="<%= active!(new_user_session_path) %>">
-                    <%= link_to 'Sign in', new_user_session_path %>
-                </li>
-
-                <li class="<%= active!(new_user_registration_path) %>">
-                    <%= link_to 'Register', new_user_registration_path %>
-                </li>
-            <% end %>
-        </ul>
+<div id="x-header">
+    <div id="x-header-menu-button">
+        <%= fa_icon 'navicon', class: 'fa-fw' %>
     </div>
+
+    <div class="x-header-logo">
+        <%= link_to 'Game Codes', root_path %>
+    </div>
+    
+    <ul>
+        <li id="<%= active!(root_path) %>" class="hidden">
+            <%= link_to 'Home', root_path %>
+        </li>
+
+        <li id="<%= active!(games_path) %>" class="hidden">
+            <%= link_to 'Games', games_path %>
+        </li>
+
+        <li id="<%= active!(users_path) %>" class="hidden">
+            <%= link_to 'Users', users_path %>
+        </li>
+
+        <% if user_signed_in? %>
+
+            <li id="<%= active!(user_path(current_user)) %>" class="hidden">
+                <%= link_to user_path(current_user) do %>
+                    logged in as : <%= current_user.nickname %> <span class="badge secondary"><%= current_user.coins %></span>
+                    <%= fa_icon 'institution' if current_user.admin? %>
+                <% end %>
+            </li>
+            
+            <li id="<%= active!(destroy_user_session_path) %>" class="hidden">
+                <%= link_to 'logout', destroy_user_session_path, method: :delete %>
+            </li>
+
+            <% else %>
+
+            <li id="<%= active!(new_user_session_path) %>" class="hidden">
+                <%= link_to 'Sign in', new_user_session_path %>
+            </li>
+
+            <li id="<%= active!(new_user_registration_path) %>" class="hidden">
+                <%= link_to 'Register', new_user_registration_path %>
+            </li>
+        <% end %>
+    </ul>
+</div>
 
     <% if user_signed_in? && current_user_is_admin %>
         <% if cookies['adminWarning'] %>
@@ -47,4 +53,3 @@
             <%= render 'shared/admin_menu_collapsed' %>
         <% end %>
     <% end %>
-</div>

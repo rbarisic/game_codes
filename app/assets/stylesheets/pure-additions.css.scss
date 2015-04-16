@@ -1,3 +1,5 @@
+@import "variables";
+
 .p-a { }
 
 .p-a-bg-1 { transition: background 1s; }
@@ -10,18 +12,25 @@
 
 .pure-button {
 	color: #333;
-}
-
-.pure-button:hover {
-	color: #222;
+	&:hover {
+		color: #222;
+	}
 }
 
 .pure-button-primary {
-	color: #eee;
+	color: #fff;
+	background-color: $brand-primary;
+	&:hover {
+		color: #fff;
+	}
 }
 
-.pure-button-primary:hover {
-	color: #fff;
+.pure-button-secondary {
+	color: #fff !important;
+	background-color: $brand-secondary;
+	&:hover {
+		color: #fff !important;
+	}
 }
 
 .pure-button-animated {
@@ -58,12 +67,16 @@
 
 .pure-menu-selected a {
 	color: #fff !important;
-	background: #29313E !important;
+	background: $brand-primary !important;
 }
 
 .l-box {
 	padding: 1em;
 	.content { margin: 1em 0 1em 0; }
+}
+
+.l-box-s {
+	padding: 0.5em;
 }
 
 .l-box-window {
@@ -104,15 +117,13 @@
 	margin: 0;
 	padding: 1em;
 	color: white;
-	background: #29313E;
+	background: $brand-primary;
 }
 
 .pure-layout-header a {
-	color: #993;
 }
 
 .pure-layout-header a:hover {
-	color: #9f3;
 }
 
 .pure-list, .pure-list-striped {
@@ -225,8 +236,17 @@ button.pure-notification-ribbon.hidden {
 
 .badge {
 	color: #fff;
-	padding: 0.2em;
+	padding: 0.2em 0.3em;
 	border-radius: 0.2em;
+	background-color: $brand-primary;
+}
+
+.badge.primary {
+	background-color: $brand-primary;
+}
+
+.badge.secondary {
+	background-color: $brand-secondary;
 }
 
 .badge.red {

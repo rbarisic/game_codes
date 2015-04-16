@@ -3,7 +3,7 @@ module ApplicationHelper
 	#-------------------------------------
 	#this should be refactored...
 	def active!(path)
-		return 'pure-menu-selected' if current_page?(path)
+		return 'active' if current_page?(path)
 	end
 
 	def tb_active!(path)

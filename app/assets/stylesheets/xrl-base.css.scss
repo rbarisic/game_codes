@@ -1,47 +1,28 @@
-body {
-	color: #333;
-	font-family: 'Lato', sans-serif;
-}
-
-a {
-	color: #3F5371;
-	text-transform: bold;
-}
-
-a:hover {
-	color: #A8CBFF;
-}
+@import "variables";
 
 .no-spacing { word-spacing: 0; }
 
-.text-heading {
-}
-
 h1.text-heading {
 	font-size: 300%;
+}
+
+a {
+	color: $link_color;
+	text-decoration: none;
+	&:hover {
+		color: $link_color_hover;
+	}
 }
 
 .text-center {
 	text-align: center;
 }
 
-.text.center {
-	text-align: center;
-}
-
-.text.left {
-	text-align: left;
-}
-
-.text.right {
+.pull-right, .text.right {
 	text-align: right;
 }
 
-.pull-right {
-	text-align: right;
-}
-
-.pull-left {
+.pull-left, .text.left {
 	text-align: left;
 }
 
@@ -92,7 +73,7 @@ div.window.distanced {
 	margin-bottom: 1em;
 
 	color: white;
-	background: #29313E;
+	background-color: $brand-primary;
 }
 
 .window-toolbar.sticky {

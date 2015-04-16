@@ -1,9 +1,9 @@
 <div id="footer" class="footer">
 	<div class="footer-layout-960">
 		<div class="pure-g">
-			<div class="pure-u-1 pure-u-md-1-2">
+			<div class="pure-u-1 pure-u-md-1-5">
 				<div class="l-box">
-					<legend>Site</legend>
+					<h2>Site</h2>
 					<ul>
 						<li><%= link_to 'Home', root_path %></li>
 						<li><%= link_to 'Games', games_path %></li>
@@ -13,11 +13,25 @@
 				</div>
 			</div>
 
-			<div class="pure-u-1 pure-u-md-1-2">
+			<% if @games %>
+				<div class="pure-u-1 pure-u-md-1-5">
+					<div class="l-box">
+					<h2>Games</h2>
+					<ul>
+						<% @games[0..3].each do |game| %>
+							<li><%= link_to game.name %></li>
+						<% end %>
+					</ul>
+					</div>
+				</div>
+			<% end %>
+
+			<div class="pure-u-1 pure-u-md-3-5">
 				<div class="l-box">
-					<legend>Info</legend>
+					<h2>Info</h2>
 					<p>
-						The Data on this Website has been created by its users.
+						The Data on this Website has been created by its users.<br />
+						Developed with &#9829; by <%= link_to "http://www.xrlabs.de", 'http://www.xrlabs.de' %>
 					</p>
 				</div>
 			</div>
