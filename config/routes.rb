@@ -3,6 +3,9 @@ GameCodes::Application.routes.draw do
   devise_for :users
 
   resources :users, except: [:edit, :update]
+
+  get "/coins" => 'users#your_coins', as: 'coins'
+
   
   resources :games
 

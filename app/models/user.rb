@@ -16,4 +16,13 @@ class User < ActiveRecord::Base
   		return false
   	end
   end
+
+  # Process this functions when a user requests a game via the GameRequestController
+  def request_a_game
+    if self.requests_today >= 1
+      self.requests_today -= 1
+    else
+      raise 'no more requests left'
+    end
+  end
 end

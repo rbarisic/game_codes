@@ -1,0 +1,50 @@
+<div class="pure-layout pure-layout-960">
+	<div class="text-center">
+		<h1>Your Coins</h1>
+	</div>
+
+	<div>
+		<h2>Overview</h2>
+		<p>You currently have <%= current_user.coins %> Coins.</p>
+		<p>Coins are used to improve the visibility of your codes. More visibility means more Allies!</p>
+	</div>
+
+	<div>
+		<h2>Get More Coins</h2>
+		
+		<div class="window distanced">
+			<div class="l-box">
+				<h3>Buy Coins</h3>
+				<p>
+					You can acquire more coins via one of the following payment processors.
+				</p>
+				<div class="window distanced" style="line-height: 3em;">
+					<div class="l-box">
+						<button class="pure-button">PayPal</button>
+						<button class="pure-button">Apple Pay</button>
+						<button class="pure-button">Android Pay</button>
+						<button class="pure-button">Amazon Wallet</button>
+						<button class="pure-button">Skrill</button>
+						<button class="pure-button">Paysafe Card</button>
+						<button class="pure-button">uKash</button>
+						<button class="pure-button">Bank Transfer</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="window distanced">
+			<div class="l-box">
+				<h3>Earn Coins</h3>
+				<p>
+					There are numerous ways for you to earn coins on <%= t('brand') %>.<br />
+					Select one of the following tasks to start generating coins <i>right away</i>!
+				</p>
+				<div class="window distanced">
+					<div class="l-box">
+						<button class="pure-button">PayPal</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

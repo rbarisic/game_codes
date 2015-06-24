@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150624144700) do
+ActiveRecord::Schema.define(version: 20150624144937) do
 
   create_table "game_codes", force: true do |t|
     t.string   "code"
@@ -73,7 +73,7 @@ ActiveRecord::Schema.define(version: 20150624144700) do
     t.string   "last_sign_in_ip"
     t.string   "admin",                  default: "f"
     t.integer  "coins",                  default: 0
-    t.integer  "requests_today",         default: 0
+    t.integer  "requests_today",         default: 2
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

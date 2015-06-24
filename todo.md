@@ -1,15 +1,28 @@
-#TODO
+# TODO
 
-##Features
--Achievements for Users
--Login with Facebook, Google, etc. (OmniAuth?)
--Find a way to sync Gamedata with the Website
+## Features
+- Achievements for Users
+- Login with Facebook, Google, etc. (OmniAuth?)
+- Find a way to sync Data from the Games with GameCodes-Website
 
-##Game Codes Objec
+## Game Codes Object
 
--Validate through Game.code_length [ ]
+- alidate through Game.code_length [x]
 
-##Game Object
+## Game Object
 
 
-#User Object
+# User Object
+
+
+
+## Known Bugs
+
+- The Flash Message is totally f*cked up. Replace it with a Flash.now [ ]
+- The Layout of the "List View" on the Games Tab is messed up. Better Layout, please [ ]
+
+### GameRequests-Controller
+
+- On the GameRequests Controller's 'new' action, update the 'requests left' in realtime [ ]
+- Better Validation for GameRequests left [ ]
+- Refresh the Validation Count daily ( via rufus gem?) [ ]

@@ -30,11 +30,18 @@
 
             <li id="<%= active!(user_path(current_user)) %>">
                 <%= link_to user_path(current_user) do %>
-                    <%= fa_icon "user", class: 'fa-fw' %> logged in as : <%= current_user.nickname %> <span class="badge secondary"><%= current_user.coins %></span>
+                    <%= fa_icon "user", class: 'fa-fw' %> logged in as : <%= current_user.nickname %>
                     <%= fa_icon 'institution' if current_user.admin? %>
                 <% end %>
             </li>
             
+            <li id="<%= active!(coins_path) %>">
+                <!-- <span class="badge secondary">Your Coins: Test </span> -->
+                <%= link_to coins_path do %>
+                <%= fa_icon 'circle', class: 'fa-fw' %> <span>Your Coins: <%= current_user.coins %></span>
+                <% end %>
+            </li>
+
             <li id="<%= active!(destroy_user_session_path) %>">
                 <%= link_to destroy_user_session_path, method: :delete do %>
                     <%= fa_icon 'sign-out', class: 'fa-fw' %> Logout

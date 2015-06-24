@@ -57,12 +57,23 @@ class GameRequestsController < ApplicationController
 	def check_requests
 		@game_requests = GameRequest.where(name: params[:name])
 		if @game_requests.count > 0
+			current_user.request_a_game
 			respond_to do |format|
 				format.js { @response = "Game already exists." }
 			end
 		else
-			puts "create records!!!"
-			GameRequest.create(name: params[:name])
+			if current_user.requests_today >= 1
+				GameRequest.create(name: params[:name])
+
+				requests_left = current_user.requests_today
+
+				current_user.update(requests_today: requests_left - 1)
+				
+				flash[:success] = "Post successfully created"
+			else
+				flash[:alert] = "Can't request games today anymore."
+				render :new
+			end
 		end
 	end
 

@@ -17,6 +17,11 @@
 <body>
 
 <%= render 'shared/header' %>
+  <div class="text-center">
+    <% flash.each do |name, msg| -%>
+      <%= content_tag :div, msg, class: name %>
+    <% end -%>
+  </div>
 <%= render 'shared/splash' if @splash %>
 
 <div id="frame">
