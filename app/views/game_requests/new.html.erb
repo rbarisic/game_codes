@@ -1,14 +1,3 @@
-<script>
-	function searchRequest() {
-		w = $('#responsive-form-animated');
-		w.addClass('responsive-form-full');
-		$('#game-request-form').addClass('text-center');
-		s = $('#search-request-button');
-		s.width(s.width());
-		s.html('<i class="fa fa-circle-o-notch fa-spin"></i>');
-	}
-</script>
-
 <% @spinner = "Loading..." %>
 
 <% if @game_request.errors.any? %>

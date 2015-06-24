@@ -1,6 +1,14 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
 // You can use CoffeeScript in this file: http://coffeescript.org/
+function searchRequest() {
+	w = $('#responsive-form-animated');
+	w.addClass('responsive-form-full');
+	$('#game-request-form').addClass('text-center');
+	s = $('#search-request-button');
+	s.width(s.width());
+	s.html('<i class="fa fa-circle-o-notch fa-spin"></i>');
+}
 
 $(function() {
 	/* Convenience for forms or links that return HTML from a remote ajax call.
