@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150624144937) do
+ActiveRecord::Schema.define(version: 20150625171014) do
 
   create_table "game_codes", force: true do |t|
     t.string   "code"
@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 20150624144937) do
     t.string   "company_url"
     t.integer  "code_length"
     t.text     "description"
+    t.integer  "coin_multiplier", default: 1
   end
 
   add_index "games", ["game_codes_id"], name: "index_games_on_game_codes_id"
