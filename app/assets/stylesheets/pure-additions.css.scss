@@ -122,7 +122,10 @@
 	margin: 0;
 	padding: 1em;
 	color: white;
-	background: $brand-primary;
+	background-color: $brand-primary;
+	// background-image: url('http://orig05.deviantart.net/3e5a/f/2015/174/3/e/city_in_the_clouds_by_tatasz-d8yebbu.png');
+	background-size: cover;
+	// min-height: 50vh;
 }
 
 .pure-layout-header a {

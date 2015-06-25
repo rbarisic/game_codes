@@ -5,10 +5,10 @@
 		<div class="l-box-s">
 			<a class="pure-button pure-button-secondary button-large">Create an Account</a>
 		</div>
-		<s class="gotmilk">
+		<div class="gotmilk">
 			<% unless user_signed_in? %>
 					<%= link_to 'Already got an Account?', new_user_session_path %>
 			<% end %>
-		</s>
+		</div>
 	</div>
 </div>
