@@ -31,4 +31,10 @@ module ApplicationHelper
 		("<#{tag.to_s} " + "id=\"#{id_safe(text)}\" >" + text + "</#{tag.to_s}>").html_safe
 		#class=\"#{class.to_s}\"
 	end
+
+
+	# Camel Cases a String and eliminates all artifacts found in common Game Names
+	def camel_case_safe(text)
+		return text.gsub(/[,.?!#<>\\\/]/, '').split(' ').each { |s| s.capitalize! }.join.to_s
+	end
 end

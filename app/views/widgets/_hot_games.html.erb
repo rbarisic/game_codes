@@ -1,0 +1,24 @@
+<!-- These are Games that have an active Coin Multiplier -->
+
+<%# cache do %>
+<% @hot_games = Game.where('coin_multiplier > 1.5') %>
+<%# end %>
+
+<% if @hot_games.count > 1.5 %>
+	<div class="window distanced round">
+		<div class="heading">
+				<h1 class="text-center">Hot Games</h1>
+				<%# annotated_tag('h1','Hot Games', class: 'text-center') %>
+
+				<p class="text-center">Earn up to <b>x8</b> Coins by adding codes for these games!</p>
+		</div>
+		
+		<div class="content">
+			<% @hot_games.each do |m| %>
+				<%= m.name %> <br /> Coins: <%= 5 * m.coin_multiplier %>
+				<hr />
+			<% end %>
+		</div>
+
+	</div>
+<% end %>

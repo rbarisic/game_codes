@@ -4,6 +4,11 @@
 			<div class="content">
 				<% if user_signed_in? %>
 					Add a new game code.
+					<% if @game.coin_multiplier > 0 %>
+					<p>
+						You will get <b><%= pluralize( 5 * @game.coin_multiplier, t('coin')) %></b> for adding a Code.
+					</p>
+					<% end %>
 					<%= form_for @game_code, html: { class: 'pure-form'} do |f| %>
 						<%= f.text_field :code, placeholder: "Code length: #{@game.code_length}" %>
 						<%= f.hidden_field :game_id, value: @game.id %>

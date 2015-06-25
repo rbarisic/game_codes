@@ -21,7 +21,7 @@
 								<span class="codes">Total codes: <%= game.game_codes.count %></span>
 							</div>
 						    <div class="dock-bottom">
-    							<%= tweet_button url: game_path(game), count: 'right', size: 'small', text: "Check out \"#{game.name}\" on Game Codes!", via: 'xrlabs' %>
+    							<%= tweet_button url: game_path(game), count: 'right', size: 'small', text: "Check out \##{camel_case_safe(game.name)} on Game Codes!", via: t('brand') %>
 							</div>
 						</div>
 					</div>

@@ -22,6 +22,8 @@
 en:
   brand: "Game Codes"
 
+  coin: "Coin"
+
   form_name: 'Name'
   form_accepted: 'Accepted'
   form_requests: 'Requests'
@@ -35,3 +37,7 @@ en:
   form_email: 'Email Address'
   form_pw: 'Password'
   form_pw_conf: 'Confirm your Password'
+
+  # Strings on Help must not contain Letters other than A..Z, a..z, 0..9, or ' ', '!', '?', '-'
+  help:
+    title: 'Help & FAQ'
