@@ -12,8 +12,11 @@
 ## Game Object
 
 
-# User Object
+## User Object
 
+## Other
+
+- Admin Interface for widget Controll [ ]
 
 
 ## Known Bugs
