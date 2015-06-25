@@ -1,2 +1,17 @@
-<h1>Welcome#help</h1>
-<p>Find me in app/views/welcome/help.html.erb</p>
+<div class="pure-layout pure-layout-960">
+	<div class="l-box">
+		<h1>Help & FAQ</h1>
+
+		<p>On this Site you can find answers to commonly asked questions.</p>
+
+		<div class="section" id="coins">
+			<h2>What can I do with Coins ?</h2>
+			<p>
+				On <%= t('brand') %> you can use <b>Coins</b> to get a better discovery for you Game Codes.
+				<b>Coins</b> enable you to advertise your Codes on the <%= link_to 'Front Page', root_path %>.
+			</p>
+
+			<%= annotated_tag('h2','How can I get more Coins?') %>
+		</h2>
+	</div>
+</div>

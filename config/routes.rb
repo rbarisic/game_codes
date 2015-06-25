@@ -15,7 +15,7 @@ GameCodes::Application.routes.draw do
 
   root 'welcome#index'
   
-  get "welcome/help"
+  get "help" => 'welcome#help', as: 'help'
   get "welcome/about"
   get "welcome/imprint"
   get '/community_terms' => 'welcome#terms', as: 'community_terms'  
