@@ -65,7 +65,7 @@ gem "font-awesome-rails"
 
 gem 'devise', '~> 3.4.1'
 gem 'purecss'
-gem 'pg'
+# gem 'pg'
 gem 'thin'
 gem "social-buttons", '~> 0.3'
 
