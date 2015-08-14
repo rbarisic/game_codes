@@ -10,10 +10,13 @@
 					</p>
 					<% end %>
 					<%= form_for @game_code, html: { class: 'pure-form'} do |f| %>
-						<%= f.text_field :code, placeholder: "Code length: #{@game.code_length}" %>
+						<%= f.text_field :code, placeholder: "Code length: #{@game.code_length}", maxlength: @game.code_length, size: 'auto'%>
 						<%= f.hidden_field :game_id, value: @game.id %>
 						<%= f.submit 'add', class: 'pure-button pure-button-primary' %>
 					<% end %>
+					<div class="code-info">
+						<%= @game.code_length %> Characters left
+					</div>
 				<% end %>
 			</div>
 		<div class="pure-g">

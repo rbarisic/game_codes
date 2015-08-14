@@ -21,3 +21,33 @@
 		</div>
 	</fieldset>
 <% end %>
+
+<script>
+	// Get the max. allowed length of a specific game's code, after the box has been selected.
+	var ajaxGetCodeLimit = function() {
+
+		var httpRequest = new XMLHttpRequest();
+
+	    httpRequest.onreadystatechange = function() {
+	        if ( httpRequest.readyState === 4) {
+	            if ( httpRequest.status === 200) {
+	                console.log(httpRequest.responseText)
+	            }
+	            else {
+	            console.log("The request could not be sent.");
+	        	}
+	        }
+	    }
+
+	    // var eventUrl = "http://localhost:8000/events/" + id + "/modal";
+	    // httpRequest.open('GET', eventUrl, true);
+
+		var apiUrl = "http://localhost:3000/api/get_code_length/1";
+
+		httpRequest.open('GET', apiUrl, true);
+		httpRequest.send(null);
+	}
+
+	$('#game_code_game_id').on('change', ajaxGetCodeLimit);
+
+</script>

@@ -64,7 +64,6 @@ GEM
       railties (>= 3.0.0)
     faker (1.4.3)
       i18n (~> 0.5)
-    faster_require (0.9.4)
     font-awesome-rails (4.3.0.0)
       railties (>= 3.2, < 5.0)
     friendly_id (5.1.0)
@@ -191,7 +190,6 @@ DEPENDENCIES
   devise (~> 3.4.1)
   factory_girl_rails
   faker
-  faster_require
   font-awesome-rails
   friendly_id (~> 5.1.0)
   jbuilder (~> 1.2)

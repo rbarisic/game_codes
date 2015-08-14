@@ -5,7 +5,6 @@ GameCodes::Application.routes.draw do
   resources :users, except: [:edit, :update]
 
   get "/coins" => 'users#your_coins', as: 'coins'
-
   
   resources :games
 
@@ -20,6 +19,10 @@ GameCodes::Application.routes.draw do
   get "welcome/imprint"
   get '/community_terms' => 'welcome#terms', as: 'community_terms'  
   post '/check_requests' => 'game_requests#check_requests', as: 'check_requests'
+
+  # API STUFF
+
+  get "/api/get_code_length/:id" => 'games#get_code_length', as: 'get_code_length'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

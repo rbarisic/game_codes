@@ -25,6 +25,17 @@
 		padding: 0;
 		font-size: 0;
 		background: #fff;
+
+		@media screen and (max-width: 48em) {
+			position: absolute;
+			top: 3.7rem;
+			left: 0;
+			right: 2rem;
+		    overflow: hidden;
+		    border: 1px solid #eee;
+		    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		
 		li {
 			font-size: 1rem;
 			margin: 0;
@@ -59,15 +70,7 @@
 				}
 			}
 		}
-		@media screen and (max-width: 48em) {
-			position: absolute;
-			top: 3.7rem;
-			left: 0;
-			right: 2rem;
-		    overflow: hidden;
-		    border: 1px solid #eee;
-		    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-		}
+
 	}
 	div.x-header-logo {
 		display: inline-block;

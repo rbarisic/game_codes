@@ -42,6 +42,10 @@ group :development, :test do
 	gem 'capybara'
 	gem 'factory_girl_rails'
 	gem 'faker'
+
+	# Use the thin webserver
+	gem 'thin'
+
 end
 
 group :test do
@@ -69,8 +73,7 @@ gem "font-awesome-rails"
 
 gem 'devise', '~> 3.4.1'
 gem 'purecss'
-gem 'thin'
 gem "social-buttons", '~> 0.3'
 
 gem 'will_paginate'
-gem 'faster_require'
+#gem 'faster_require'

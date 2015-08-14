@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150625171014) do
+ActiveRecord::Schema.define(version: 20150814102315) do
 
   create_table "game_codes", force: true do |t|
     t.string   "code"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20150625171014) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "game_id"
+    t.integer  "votes",      default: 1
   end
 
   add_index "game_codes", ["code"], name: "index_game_codes_on_code", unique: true

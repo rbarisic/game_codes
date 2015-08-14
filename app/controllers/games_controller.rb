@@ -45,6 +45,11 @@ class GamesController < ApplicationController
 
 	end
 
+	def get_code_length
+		@game = Game.find(params[:id])
+		render text: "#{@game.id}"
+	end
+
 	private
 		def game_params
 	      params.require(:game).permit(:name, :creator, :company_url, :code_length, :cover_url, :description)
