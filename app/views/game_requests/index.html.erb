@@ -10,8 +10,9 @@
 			<tr class="pure-table-heading">
 				<th>Name</th>
 				<th>Votes</th>
-				<th>Complete</th>
 				<th>Accepted</th>
+				<th>Date Requested</th>
+				<th>Actions</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -19,8 +20,12 @@
 		<tr>
 			<td><%= request.name %></td>
 			<td><span class="badge blue"><%= request.requests %></span></td>
-			<td><%= link_to 'Edit', edit_game_request_path(request), class: 'pure-button' %></td>
 			<td><% if request.accepted == true %><span class="badge blue">YES</span><% else %><span class="badge red">NO</span><% end %></td>
+			<td><%= request.created_at.strftime('%d.%m.%Y at %H:%M o\'clock') %></td>
+			<td>
+				<%= link_to 'Edit', edit_game_request_path(request), class: 'pure-button pure-button-primary' %>
+				<%= link_to 'Discard', game_request_path(request), class: 'pure-button' %>
+			</td>
 		</tr>
 		<% end %>
 		</tbody>
