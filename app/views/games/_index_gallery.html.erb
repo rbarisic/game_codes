@@ -15,7 +15,7 @@
 			<%= link_to game, class: 'block-link' do %>
 				<div class="window distanced noborder">
 					<div class="content nopadding">
-						<div class="game-container", style="background-image: url(<%= game.cover_url ||= 'default-cover.jpg'%>)">
+						<div class="game-container", style="background-image: <%= render_b64_url(game.cover, game.cover_content_type) %>">
 							<div class="header">
 								<h1><%= game.name %></h1>
 								<span class="codes">Total codes: <%= game.game_codes.count %></span>

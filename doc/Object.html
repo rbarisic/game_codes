@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Object - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link">BasicObject
+  
+</div>
+
+    <div id="includes-section" class="nav-section">
+  <h3>Included Modules</h3>
+
+  <ul class="link-list">
+  
+  
+    <li><span class="include">Devise::TestHelpers</span>
+  
+  
+  
+    <li><span class="include">FactoryGirl::Syntax::Methods</span>
+  
+  
+  
+    <li><a class="include" href="ApplicationHelper.html">ApplicationHelper</a>
+  
+  
+  </ul>
+</div>
+
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-i-create_dummy_user">#create_dummy_user</a>
+    
+    <li ><a href="#method-i-create_game">#create_game</a>
+    
+    <li ><a href="#method-i-create_game_code">#create_game_code</a>
+    
+    <li ><a href="#method-i-sign_in">#sign_in</a>
+    
+    <li ><a href="#method-i-sign_out">#sign_out</a>
+    
+    <li ><a href="#method-i-sign_up_with">#sign_up_with</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Object">
+  <h1 id="class-Object" class="class">
+    class Object
+  </h1>
+
+  <section class="description">
+    
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <section class="constants-list">
+      <header>
+        <h3>Constants</h3>
+      </header>
+      <dl>
+      
+        <dt id="APP_PATH">APP_PATH
+        
+        <dd>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-create_dummy_user" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_dummy_user</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="create_dummy_user-source">
+            <pre><span class="ruby-comment"># File db/seeds.rb, line 15</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create_dummy_user</span>
+        <span class="ruby-constant">User</span>.<span class="ruby-identifier">create</span>(<span class="ruby-identifier">nickname</span><span class="ruby-operator">:</span> <span class="ruby-constant">Faker</span><span class="ruby-operator">::</span><span class="ruby-constant">Internet</span>.<span class="ruby-identifier">user_name</span>,
+                                <span class="ruby-identifier">email</span><span class="ruby-operator">:</span> <span class="ruby-constant">Faker</span><span class="ruby-operator">::</span><span class="ruby-constant">Internet</span>.<span class="ruby-identifier">email</span>,
+                                <span class="ruby-identifier">password</span><span class="ruby-operator">:</span> <span class="ruby-string">&#39;Rosebud777&#39;</span>,
+                                <span class="ruby-identifier">password_confirmation</span><span class="ruby-operator">:</span> <span class="ruby-string">&#39;Rosebud777&#39;</span>,
+                                <span class="ruby-identifier">admin</span><span class="ruby-operator">:</span> <span class="ruby-keyword">false</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-create_game" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_game</span><span
+            class="method-args">(name)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="create_game-source">
+            <pre><span class="ruby-comment"># File db/seeds.rb, line 31</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create_game</span>(<span class="ruby-identifier">name</span>)
+        <span class="ruby-constant">Game</span>.<span class="ruby-identifier">create</span>(<span class="ruby-identifier">name</span><span class="ruby-operator">:</span> <span class="ruby-identifier">name</span>,
+                                <span class="ruby-identifier">creator</span><span class="ruby-operator">:</span> <span class="ruby-constant">Faker</span><span class="ruby-operator">::</span><span class="ruby-constant">Company</span>.<span class="ruby-identifier">name</span>,
+                                <span class="ruby-identifier">company_url</span><span class="ruby-operator">:</span> <span class="ruby-string">&#39;http://www.&#39;</span> <span class="ruby-operator">+</span> <span class="ruby-constant">Faker</span><span class="ruby-operator">::</span><span class="ruby-constant">Internet</span>.<span class="ruby-identifier">domain_name</span>,
+                                <span class="ruby-identifier">cover_url</span><span class="ruby-operator">:</span> <span class="ruby-string">&#39;http://www.google.com&#39;</span>,
+                                <span class="ruby-identifier">code_length</span><span class="ruby-operator">:</span> <span class="ruby-value">8</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">rand</span>(<span class="ruby-value">6</span>),
+                                <span class="ruby-identifier">description</span><span class="ruby-operator">:</span> <span class="ruby-constant">Faker</span><span class="ruby-operator">::</span><span class="ruby-constant">Lorem</span>.<span class="ruby-identifier">paragraph</span>(<span class="ruby-value">2</span>))
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-create_game_code" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_game_code</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="create_game_code-source">
+            <pre><span class="ruby-comment"># File db/seeds.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create_game_code</span>
+        <span class="ruby-identifier">game</span> = <span class="ruby-constant">Game</span>.<span class="ruby-identifier">find</span>(<span class="ruby-value">1</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">rand</span>(<span class="ruby-constant">Game</span>.<span class="ruby-identifier">count</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>)) <span class="ruby-comment"># find a random game in the valid id-range </span>
+
+        <span class="ruby-constant">GameCode</span>.<span class="ruby-identifier">create</span>(<span class="ruby-identifier">code</span><span class="ruby-operator">:</span> <span class="ruby-constant">Faker</span><span class="ruby-operator">::</span><span class="ruby-constant">Number</span>.<span class="ruby-identifier">number</span>(<span class="ruby-identifier">game</span>.<span class="ruby-identifier">code_length</span>),
+                                        <span class="ruby-identifier">game_id</span><span class="ruby-operator">:</span> <span class="ruby-identifier">game</span>.<span class="ruby-identifier">id</span>,
+                                        <span class="ruby-identifier">user_id</span><span class="ruby-operator">:</span> (<span class="ruby-value">1</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">rand</span>(<span class="ruby-constant">User</span>.<span class="ruby-identifier">count</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>)))
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-sign_in" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">sign_in</span><span
+            class="method-args">(user, options={})</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="sign_in-source">
+            <pre><span class="ruby-comment"># File spec/support/utilities.rb, line 10</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">sign_in</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">options</span>={})
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">options</span>[<span class="ruby-value">:no_capybara</span>]
+    <span class="ruby-comment">#Sign in when not using Capybara.</span>
+    <span class="ruby-identifier">remember_token</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">new_remember_token</span>
+    <span class="ruby-identifier">cookies</span>[<span class="ruby-value">:remember_token</span>] = <span class="ruby-identifier">remember_token</span>
+    <span class="ruby-identifier">user</span>.<span class="ruby-identifier">update_attribute</span>(<span class="ruby-value">:remember_token</span>, <span class="ruby-constant">User</span>.<span class="ruby-identifier">digest</span>(<span class="ruby-identifier">remember_token</span>))
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">visit</span> <span class="ruby-identifier">signin_path</span>
+    <span class="ruby-identifier">fill_in</span> <span class="ruby-string">&quot;Email&quot;</span>,  <span class="ruby-identifier">with</span><span class="ruby-operator">:</span> <span class="ruby-identifier">user</span>.<span class="ruby-identifier">email</span>
+    <span class="ruby-identifier">fill_in</span> <span class="ruby-string">&quot;Password&quot;</span>, <span class="ruby-identifier">with</span><span class="ruby-operator">:</span> <span class="ruby-identifier">user</span>.<span class="ruby-identifier">password</span> 
+    <span class="ruby-identifier">click_button</span> <span class="ruby-string">&quot;Sign in&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-sign_out" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">sign_out</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="sign_out-source">
+            <pre><span class="ruby-comment"># File spec/support/utilities.rb, line 24</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">sign_out</span>
+  <span class="ruby-identifier">first</span>(<span class="ruby-value">:link</span>, <span class="ruby-string">&quot;Sign Out&quot;</span>).<span class="ruby-identifier">click</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-sign_up_with" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">sign_up_with</span><span
+            class="method-args">(email, password)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="sign_up_with-source">
+            <pre><span class="ruby-comment"># File spec/support/utilities.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">sign_up_with</span>(<span class="ruby-identifier">email</span>, <span class="ruby-identifier">password</span>)
+  <span class="ruby-identifier">visit</span> <span class="ruby-identifier">sign_up_path</span>
+  <span class="ruby-identifier">fill_in</span> <span class="ruby-string">&#39;Email&#39;</span>, <span class="ruby-identifier">with</span><span class="ruby-operator">:</span> <span class="ruby-identifier">email</span>
+  <span class="ruby-identifier">fill_in</span> <span class="ruby-string">&#39;Password&#39;</span>, <span class="ruby-identifier">with</span><span class="ruby-operator">:</span> <span class="ruby-identifier">password</span>
+  <span class="ruby-identifier">click_button</span> <span class="ruby-string">&#39;Sign up&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

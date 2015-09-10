@@ -33,6 +33,7 @@ class GamesController < ApplicationController
 
 	def update
 		@game = Game.friendly.find(params[:id])
+
 		if @game.update(game_params)
 			flash[:success]
 			redirect_to @game
@@ -52,7 +53,7 @@ class GamesController < ApplicationController
 
 	private
 		def game_params
-	      params.require(:game).permit(:name, :creator, :company_url, :code_length, :cover_url, :description)
+	      params.require(:game).permit(:name, :creator, :company_url, :code_length, :cover, :company_image, :description, :cover_url)
 	    end
 
 	    def verify_admin

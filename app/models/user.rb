@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   validates :nickname, presence: true, length: { minimum: 3, maximum: 20 }, uniqueness: { case_sensitive: false }
   validates :community_terms, acceptance: true
 
-  before_create :convert_avatar
+  before_save :convert_avatar
 
   has_many :game_codes
 

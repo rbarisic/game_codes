@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150910124355) do
+ActiveRecord::Schema.define(version: 20150910131707) do
 
   create_table "game_codes", force: true do |t|
     t.string   "code"
@@ -34,10 +34,11 @@ ActiveRecord::Schema.define(version: 20150910124355) do
     t.datetime "updated_at"
     t.string   "slug"
     t.string   "creator"
-    t.string   "cover_url"
     t.string   "company_url"
     t.string   "code_length"
     t.string   "description"
+    t.string   "cover"
+    t.string   "company_image"
   end
 
   add_index "game_requests", ["name"], name: "index_game_requests_on_name", unique: true
@@ -49,11 +50,14 @@ ActiveRecord::Schema.define(version: 20150910124355) do
     t.string   "slug"
     t.integer  "game_codes_id"
     t.string   "creator"
-    t.string   "cover_url"
     t.string   "company_url"
     t.integer  "code_length"
     t.text     "description"
-    t.integer  "coin_multiplier", default: 1
+    t.integer  "coin_multiplier",            default: 1
+    t.string   "cover"
+    t.string   "cover_content_type"
+    t.string   "company_image"
+    t.string   "company_image_content_type"
   end
 
   add_index "games", ["game_codes_id"], name: "index_games_on_game_codes_id"
