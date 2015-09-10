@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150814102315) do
+ActiveRecord::Schema.define(version: 20150910124355) do
 
   create_table "game_codes", force: true do |t|
     t.string   "code"
@@ -76,6 +76,8 @@ ActiveRecord::Schema.define(version: 20150814102315) do
     t.string   "admin",                  default: "f"
     t.integer  "coins",                  default: 0
     t.integer  "requests_today",         default: 2
+    t.string   "avatar"
+    t.string   "avatar_content_type"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
