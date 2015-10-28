@@ -1,0 +1,6 @@
+if [ echo "use $OPENSHIFT_APP_NAME; show tables" | mysql | grep game_codes ]
+then
+    bundle exec rake db:schema:load RAILS_ENV="production"
+else
+    bundle exec rake db:migrate RAILS_ENV="production"
+fi
