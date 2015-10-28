@@ -45,7 +45,6 @@ group :development, :test do
 
 	# Use the thin webserver
 	gem 'thin'
-
 end
 
 group :test do

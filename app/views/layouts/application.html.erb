@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <meta charset=""
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
   <!--[if lte IE 8]>
 	    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
@@ -13,8 +14,24 @@
 	    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
 	<!--<![endif]-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="rating" content="general">
+  <meta name="robots" content="all, follow, index">
+  <link rel="author" href="http://www.xrlabs.de" />
+  <meta name="copyright" content="http://www.xrlabs.de">
+  <meta name="description" content="GameCodes allows you to share your Alliance Codes for games like Monster Warlord, The Simpsons - Tapped Out, Underworld Empire, Downtown Mafia and Mob Wars." />
+  <meta name="keywords" content="clan, codes, game codes, monster warlord, underworld empire, add code" />
 </head>
 <body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69431211-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 <%= render 'shared/header' %>
   <div class="text-center">

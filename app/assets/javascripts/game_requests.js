@@ -2,12 +2,12 @@
 // All this logic will automatically be available in application.js.
 // You can use CoffeeScript in this file: http://coffeescript.org/
 function searchRequest() {
-	w = $('#responsive-form-animated');
-	w.addClass('responsive-form-full');
+	target = $('#responsive-form-animated');
+	target.addClass('responsive-form-full');
 	$('#game-request-form').addClass('text-center');
-	s = $('#search-request-button');
-	s.width(s.width());
-	s.html('<i class="fa fa-circle-o-notch fa-spin"></i>');
+	searchButton = $('#search-request-button');
+	searchButton.width(searchButton.width());
+	searchButton.html('<i class="fa fa-circle-o-notch fa-spin"></i>');
 }
 
 $(function() {
